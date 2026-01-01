@@ -1,43 +1,148 @@
 # Nukitori
 
-TODO: Delete this and the text below, and describe your gem
+The missing Ruby web scraping gem for the AI era. Define what you want, get XPath schema auto-generated, extract data from similar pages without AI.
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/nukitori`. To experiment with that code, run `bin/console` for an interactive prompt.
+- **Nukitori = Nokogiri + AI** — smart HTML extraction powered by LLMs
+- **One-time LLM call** — generates XPath schema once, then extracts data without AI on similar pages
+- **Any LLM provider** — works with OpenAI, Anthropic, Gemini, and local models via RubyLLM
 
 ## Installation
 
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
-
-Install the gem and add to the application's Gemfile by executing:
-
-```bash
-bundle add UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+```ruby
+gem 'nukitori'
 ```
 
-If bundler is not being used to manage dependencies, install the gem by executing:
+## Configuration
 
-```bash
-gem install UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+```ruby
+require 'nukitori'
+
+Nukitori.configure do |config|
+  config.default_model = 'gpt-5'
+  config.openai_api_key = ENV['OPENAI_API_KEY']
+  # or
+  config.anthropic_api_key = ENV['ANTHROPIC_API_KEY']
+  # or
+  config.gemini_api_key = ENV['GEMINI_API_KEY']
+end
 ```
 
 ## Usage
 
-TODO: Write usage instructions here
+### Simple DSL
 
-## Development
+```ruby
+# With schema caching (recommended)
+# First run: generates XPath schema via LLM, saves to file
+# Next runs: loads schema from file (no LLM calls)
+data = Nukitori(html, 'repos_schema.json') do
+  string :total_count
+  array :repos do
+    object do
+      string :name
+      string :description
+      string :url
+      string :stars
+      array :tags, of: :string
+    end
+  end
+end
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+puts data['repos'].first['name']
+```
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+```ruby
+# Without caching (generates schema each time)
+data = Nukitori(html) do
+  array :products do
+    object do
+      string :title
+      number :price
+    end
+  end
+end
+```
 
-## Contributing
+```ruby
+# With pre-made XPath schema hash
+data = Nukitori(html, my_xpath_schema)
+```
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/nukitori. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/nukitori/blob/main/CODE_OF_CONDUCT.md).
+### Extended Usage
+
+For more control, use the classes directly:
+
+```ruby
+require 'nukitori'
+require 'ruby_llm/schema'
+
+# Define requirements schema
+class ReposSchema < RubyLLM::Schema
+  array :repos do
+    object do
+      string :name
+      string :url
+      number :stars
+    end
+  end
+end
+
+# Generate XPath schema (uses LLM)
+doc = Nokogiri::HTML(html)
+generator = Nukitori::SchemaGenerator.new
+xpath_schema = generator.generate(doc, ReposSchema.new.to_json)
+
+# Save for reuse
+File.write('xpath_schema.json', JSON.pretty_generate(xpath_schema))
+
+# Extract data (no LLM)
+extractor = Nukitori::Extractor.new(xpath_schema)
+data = extractor.extract(doc)
+```
+
+### With Custom Model
+
+```ruby
+generator = Nukitori::SchemaGenerator.new(model: 'claude-sonnet-4')
+xpath_schema = generator.generate(doc, requirements)
+```
+
+## How It Works
+
+1. **You define** what data to extract using RubyLLM::Schema DSL
+2. **LLM generates** XPath expressions that locate that data in HTML
+3. **Extractor uses** those XPaths to pull data from any similar page
+
+```
+HTML + Schema Definition → LLM → XPath Schema → Extractor → Data
+     (once)                         (reusable)      (no AI)
+```
+
+## Model Benchmarks
+
+Tested on https://github.com/scrapy/scrapy page:
+
+```ruby
+data = Nukitori(html, 'schema.json') do
+  string :name
+  string :desc
+  string :stars_count
+  array :tags, of: :string
+end
+```
+
+| Provider | Model | Time |
+|----------|-------|------|
+| OpenAI | `gpt-5.2` | ~7s |
+| OpenAI | `gpt-5` | ~35s |
+| OpenAI | `gpt-5-mini` | ~18s |
+| OpenAI | `gpt-5-nano` | ~32s (may generate incomplete schemas) |
+| Gemini | `gemini-3-flash-preview` | ~11s |
+| Gemini | `gemini-3-pro-preview` | ~30s |
+| Anthropic | `claude-opus-4-5-20251101` | ~6.5s |
+| Anthropic | `claude-sonnet-4-5-20250929` | ~7s |
+| Anthropic | `claude-haiku-4-5-20251001` | ~3.5s |
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the Nukitori project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/nukitori/blob/main/CODE_OF_CONDUCT.md).
+MIT
