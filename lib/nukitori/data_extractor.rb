@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Nukitori
-  class Extractor
+  class DataExtractor
     attr_reader :schema
 
     # @param schema [Hash] XPath schema
@@ -9,10 +9,11 @@ module Nukitori
       @schema = deep_stringify_keys(schema)
     end
 
-    # Extract data from Nokogiri document using the XPath schema
-    # @param doc [Nokogiri::HTML::Document] Nokogiri document
+    # Extract data from HTML using the XPath schema
+    # @param html [String, Nokogiri::HTML::Document] HTML string or Nokogiri document
     # @return [Hash] Extracted data
-    def extract(doc)
+    def extract(html)
+      doc = html.is_a?(Nokogiri::HTML::Document) ? html : Nokogiri::HTML(html)
       extract_fields(doc, schema)
     end
 

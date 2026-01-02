@@ -7,7 +7,7 @@ require 'json'
 
 require_relative 'nukitori/version'
 require_relative 'nukitori/schema_generator'
-require_relative 'nukitori/extractor'
+require_relative 'nukitori/data_extractor'
 
 module Nukitori
   # Path to bundled models.json with up-to-date model definitions
@@ -18,7 +18,7 @@ module Nukitori
     #
     # @example
     #   Nukitori.configure do |config|
-    #     config.default_model = 'gpt-5'
+    #     config.default_model = 'gpt-5.2'
     #     config.openai_api_key = ENV['OPENAI_API_KEY']
     #   end
     #
@@ -34,7 +34,7 @@ module Nukitori
     #
     # @param html [String, Nokogiri::HTML::Document] HTML content or Nokogiri doc
     # @param schema_or_path [Hash, String, nil] Optional: XPath schema hash OR path to cache schema
-    # @param block [Proc] RubyLLM::Schema definition block
+    # @param block [Proc] Schema definition block
     # @return [Hash] Extracted data
     #
     # @example Simple usage (generates schema each time)
@@ -64,7 +64,7 @@ module Nukitori
 
       xpath_schema = resolve_schema(doc, schema_or_path, &block)
 
-      extractor = Extractor.new(xpath_schema)
+      extractor = DataExtractor.new(xpath_schema)
       extractor.extract(doc)
     end
 
@@ -94,13 +94,8 @@ module Nukitori
     end
 
     def generate_schema(doc, &block)
-      schema_class = Class.new(RubyLLM::Schema)
-      schema_class.class_eval(&block)
-
-      requirements = schema_class.new.to_json
-
-      generator = SchemaGenerator.new
-      generator.generate(doc, requirements)
+      generator = SchemaGenerator.new(&block)
+      generator.create_extraction_schema_for(doc)
     end
 
     def generate_and_save_schema(doc, path, &block)
