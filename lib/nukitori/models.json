@@ -1,5 +1,383 @@
 [
   {
+    "id": "claude-3-5-haiku-20241022",
+    "name": "Claude Haiku 3.5",
+    "provider": "anthropic",
+    "family": "claude-3-5-haiku",
+    "created_at": "2024-10-22 00:00:00 UTC",
+    "context_window": 200000,
+    "max_output_tokens": 8192,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "batch"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.8,
+          "output_per_million": 4.0
+        },
+        "batch": {
+          "input_per_million": 0.4,
+          "output_per_million": 2.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "claude-3-7-sonnet-20250219",
+    "name": "Claude Sonnet 3.7",
+    "provider": "anthropic",
+    "family": "claude-3-7-sonnet",
+    "created_at": "2025-02-24 00:00:00 UTC",
+    "context_window": 200000,
+    "max_output_tokens": 8192,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "batch",
+      "reasoning",
+      "citations"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 3.0,
+          "output_per_million": 15.0,
+          "reasoning_output_per_million": 37.5
+        },
+        "batch": {
+          "input_per_million": 1.5,
+          "output_per_million": 7.5,
+          "reasoning_output_per_million": 18.75
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "claude-3-haiku-20240307",
+    "name": "Claude Haiku 3",
+    "provider": "anthropic",
+    "family": "claude-3-haiku",
+    "created_at": "2024-03-07 00:00:00 UTC",
+    "context_window": 200000,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "batch"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.25,
+          "output_per_million": 1.25
+        },
+        "batch": {
+          "input_per_million": 0.125,
+          "output_per_million": 0.625
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "claude-3-opus-20240229",
+    "name": "Claude Opus 3",
+    "provider": "anthropic",
+    "family": "claude-3-opus",
+    "created_at": "2024-02-29 00:00:00 UTC",
+    "context_window": 200000,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "batch"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 15.0,
+          "output_per_million": 75.0
+        },
+        "batch": {
+          "input_per_million": 7.5,
+          "output_per_million": 37.5
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "claude-haiku-4-5-20251001",
+    "name": "Claude Haiku 4.5",
+    "provider": "anthropic",
+    "family": "claude-2",
+    "created_at": "2025-10-15 00:00:00 UTC",
+    "context_window": 200000,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "reasoning"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 3.0,
+          "output_per_million": 15.0
+        },
+        "batch": {
+          "input_per_million": 1.5,
+          "output_per_million": 7.5
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "claude-opus-4-1-20250805",
+    "name": "Claude Opus 4.1",
+    "provider": "anthropic",
+    "family": "claude-2",
+    "created_at": "2025-08-05 00:00:00 UTC",
+    "context_window": 200000,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "reasoning"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 3.0,
+          "output_per_million": 15.0
+        },
+        "batch": {
+          "input_per_million": 1.5,
+          "output_per_million": 7.5
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "claude-opus-4-20250514",
+    "name": "Claude Opus 4",
+    "provider": "anthropic",
+    "family": "claude-2",
+    "created_at": "2025-05-22 00:00:00 UTC",
+    "context_window": 200000,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "reasoning"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 3.0,
+          "output_per_million": 15.0
+        },
+        "batch": {
+          "input_per_million": 1.5,
+          "output_per_million": 7.5
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "claude-opus-4-5-20251101",
+    "name": "Claude Opus 4.5",
+    "provider": "anthropic",
+    "family": "claude-2",
+    "created_at": "2025-11-24 00:00:00 UTC",
+    "context_window": 200000,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "reasoning"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 3.0,
+          "output_per_million": 15.0
+        },
+        "batch": {
+          "input_per_million": 1.5,
+          "output_per_million": 7.5
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "claude-sonnet-4-20250514",
+    "name": "Claude Sonnet 4",
+    "provider": "anthropic",
+    "family": "claude-2",
+    "created_at": "2025-05-22 00:00:00 UTC",
+    "context_window": 200000,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "reasoning"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 3.0,
+          "output_per_million": 15.0
+        },
+        "batch": {
+          "input_per_million": 1.5,
+          "output_per_million": 7.5
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "claude-sonnet-4-5-20250929",
+    "name": "Claude Sonnet 4.5",
+    "provider": "anthropic",
+    "family": "claude-2",
+    "created_at": "2025-09-29 00:00:00 UTC",
+    "context_window": 200000,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "reasoning"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 3.0,
+          "output_per_million": 15.0
+        },
+        "batch": {
+          "input_per_million": 1.5,
+          "output_per_million": 7.5
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
     "id": "deepseek-chat",
     "name": "deepseek-chat",
     "provider": "deepseek",
@@ -29,7 +407,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "deepseek"
+    }
   },
   {
     "id": "deepseek-reasoner",
@@ -61,7 +442,160 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "deepseek"
+    }
+  },
+  {
+    "id": "aqa",
+    "name": "Model that performs Attributed Question Answering.",
+    "provider": "gemini",
+    "family": "aqa",
+    "created_at": null,
+    "context_window": 7168,
+    "max_output_tokens": 1024,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {},
+    "metadata": {
+      "version": "001",
+      "description": "Model trained to return answers to questions that are grounded in provided sources, along with estimating answerable probability.",
+      "supported_generation_methods": [
+        "generateAnswer"
+      ]
+    }
+  },
+  {
+    "id": "deep-research-pro-preview-12-2025",
+    "name": "Deep Research Pro Preview (Dec-12-2025)",
+    "provider": "gemini",
+    "family": "other",
+    "created_at": null,
+    "context_window": 131072,
+    "max_output_tokens": 65536,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "structured_output",
+      "caching"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.075,
+          "output_per_million": 0.3
+        },
+        "batch": {
+          "input_per_million": 0.0375,
+          "output_per_million": 0.15
+        }
+      }
+    },
+    "metadata": {
+      "version": "deepthink-exp-05-20",
+      "description": "Preview release (December 12th, 2025) of Deep Research Pro",
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens"
+      ]
+    }
+  },
+  {
+    "id": "embedding-001",
+    "name": "Embedding 001",
+    "provider": "gemini",
+    "family": "embedding1",
+    "created_at": null,
+    "context_window": 2048,
+    "max_output_tokens": 1,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text",
+        "embeddings"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "batch"
+    ],
+    "pricing": {
+      "embeddings": {
+        "standard": {
+          "input_per_million": 0.002
+        }
+      }
+    },
+    "metadata": {
+      "version": "001",
+      "description": "Obtain a distributed representation of a text.",
+      "supported_generation_methods": [
+        "embedContent"
+      ]
+    }
+  },
+  {
+    "id": "embedding-gecko-001",
+    "name": "Embedding Gecko",
+    "provider": "gemini",
+    "family": "other",
+    "created_at": null,
+    "context_window": 1024,
+    "max_output_tokens": 1,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text",
+        "embeddings"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "batch"
+    ],
+    "pricing": {
+      "embeddings": {
+        "standard": {
+          "input_per_million": 0.002
+        }
+      }
+    },
+    "metadata": {
+      "version": "001",
+      "description": "Obtain a distributed representation of a text.",
+      "supported_generation_methods": [
+        "embedText",
+        "countTextTokens"
+      ]
+    }
   },
   {
     "id": "gemini-2.0-flash",
@@ -100,7 +634,16 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "version": "2.0",
+      "description": "Gemini 2.0 Flash",
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens",
+        "createCachedContent",
+        "batchGenerateContent"
+      ]
+    }
   },
   {
     "id": "gemini-2.0-flash-001",
@@ -139,7 +682,16 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "version": "2.0",
+      "description": "Stable version of Gemini 2.0 Flash, our fast and versatile multimodal model for scaling across diverse tasks, released in January of 2025.",
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens",
+        "createCachedContent",
+        "batchGenerateContent"
+      ]
+    }
   },
   {
     "id": "gemini-2.0-flash-exp",
@@ -178,7 +730,64 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "version": "2.0",
+      "description": "Gemini 2.0 Flash Experimental",
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens",
+        "bidiGenerateContent"
+      ]
+    }
+  },
+  {
+    "id": "gemini-2.0-flash-exp-image-generation",
+    "name": "Gemini 2.0 Flash (Image Generation) Experimental",
+    "provider": "gemini",
+    "family": "gemini20_flash",
+    "created_at": null,
+    "context_window": 1048576,
+    "max_output_tokens": 8192,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "structured_output",
+      "batch",
+      "caching"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.1,
+          "output_per_million": 0.4
+        },
+        "batch": {
+          "input_per_million": 0.05,
+          "output_per_million": 0.2
+        }
+      }
+    },
+    "metadata": {
+      "version": "2.0",
+      "description": "Gemini 2.0 Flash (Image Generation) Experimental",
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens",
+        "bidiGenerateContent"
+      ]
+    }
   },
   {
     "id": "gemini-2.0-flash-lite",
@@ -217,7 +826,16 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "version": "2.0",
+      "description": "Gemini 2.0 Flash-Lite",
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens",
+        "createCachedContent",
+        "batchGenerateContent"
+      ]
+    }
   },
   {
     "id": "gemini-2.0-flash-lite-001",
@@ -256,7 +874,157 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "version": "2.0",
+      "description": "Stable version of Gemini 2.0 Flash-Lite",
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens",
+        "createCachedContent",
+        "batchGenerateContent"
+      ]
+    }
+  },
+  {
+    "id": "gemini-2.0-flash-lite-preview",
+    "name": "Gemini 2.0 Flash-Lite Preview",
+    "provider": "gemini",
+    "family": "gemini20_flash_lite",
+    "created_at": null,
+    "context_window": 1048576,
+    "max_output_tokens": 8192,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "batch"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.075,
+          "output_per_million": 0.3
+        },
+        "batch": {
+          "input_per_million": 0.0375,
+          "output_per_million": 0.15
+        }
+      }
+    },
+    "metadata": {
+      "version": "preview-02-05",
+      "description": "Preview release (February 5th, 2025) of Gemini 2.0 Flash-Lite",
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens",
+        "createCachedContent",
+        "batchGenerateContent"
+      ]
+    }
+  },
+  {
+    "id": "gemini-2.0-flash-lite-preview-02-05",
+    "name": "Gemini 2.0 Flash-Lite Preview 02-05",
+    "provider": "gemini",
+    "family": "gemini20_flash_lite",
+    "created_at": null,
+    "context_window": 1048576,
+    "max_output_tokens": 8192,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "batch"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.075,
+          "output_per_million": 0.3
+        },
+        "batch": {
+          "input_per_million": 0.0375,
+          "output_per_million": 0.15
+        }
+      }
+    },
+    "metadata": {
+      "version": "preview-02-05",
+      "description": "Preview release (February 5th, 2025) of Gemini 2.0 Flash-Lite",
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens",
+        "createCachedContent",
+        "batchGenerateContent"
+      ]
+    }
+  },
+  {
+    "id": "gemini-2.5-computer-use-preview-10-2025",
+    "name": "Gemini 2.5 Computer Use Preview 10-2025",
+    "provider": "gemini",
+    "family": "other",
+    "created_at": null,
+    "context_window": 131072,
+    "max_output_tokens": 65536,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "structured_output",
+      "caching"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.075,
+          "output_per_million": 0.3
+        },
+        "batch": {
+          "input_per_million": 0.0375,
+          "output_per_million": 0.15
+        }
+      }
+    },
+    "metadata": {
+      "version": "Gemini 2.5 Computer Use Preview 10-2025",
+      "description": "Gemini 2.5 Computer Use Preview 10-2025",
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens"
+      ]
+    }
   },
   {
     "id": "gemini-2.5-flash",
@@ -295,7 +1063,114 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "version": "001",
+      "description": "Stable version of Gemini 2.5 Flash, our mid-size multimodal model that supports up to 1 million tokens, released in June of 2025.",
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens",
+        "createCachedContent",
+        "batchGenerateContent"
+      ]
+    }
+  },
+  {
+    "id": "gemini-2.5-flash-image",
+    "name": "Nano Banana",
+    "provider": "gemini",
+    "family": "other",
+    "created_at": null,
+    "context_window": 32768,
+    "max_output_tokens": 32768,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "structured_output",
+      "batch",
+      "caching"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.075,
+          "output_per_million": 0.3
+        },
+        "batch": {
+          "input_per_million": 0.0375,
+          "output_per_million": 0.15
+        }
+      }
+    },
+    "metadata": {
+      "version": "2.0",
+      "description": "Gemini 2.5 Flash Preview Image",
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens",
+        "batchGenerateContent"
+      ]
+    }
+  },
+  {
+    "id": "gemini-2.5-flash-image-preview",
+    "name": "Nano Banana",
+    "provider": "gemini",
+    "family": "other",
+    "created_at": null,
+    "context_window": 32768,
+    "max_output_tokens": 32768,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "structured_output",
+      "batch",
+      "caching"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.075,
+          "output_per_million": 0.3
+        },
+        "batch": {
+          "input_per_million": 0.0375,
+          "output_per_million": 0.15
+        }
+      }
+    },
+    "metadata": {
+      "version": "2.0",
+      "description": "Gemini 2.5 Flash Preview Image",
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens",
+        "batchGenerateContent"
+      ]
+    }
   },
   {
     "id": "gemini-2.5-flash-lite",
@@ -334,7 +1209,16 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "version": "001",
+      "description": "Stable version of Gemini 2.5 Flash-Lite, released in July of 2025",
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens",
+        "createCachedContent",
+        "batchGenerateContent"
+      ]
+    }
   },
   {
     "id": "gemini-2.5-flash-lite-preview-09-2025",
@@ -373,7 +1257,16 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "version": "2.5-preview-09-25",
+      "description": "Preview release (Septempber 25th, 2025) of Gemini 2.5 Flash-Lite",
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens",
+        "createCachedContent",
+        "batchGenerateContent"
+      ]
+    }
   },
   {
     "id": "gemini-2.5-flash-preview-09-2025",
@@ -412,7 +1305,64 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "version": "Gemini 2.5 Flash Preview 09-2025",
+      "description": "Gemini 2.5 Flash Preview Sep 2025",
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens",
+        "createCachedContent",
+        "batchGenerateContent"
+      ]
+    }
+  },
+  {
+    "id": "gemini-2.5-flash-preview-tts",
+    "name": "Gemini 2.5 Flash Preview TTS",
+    "provider": "gemini",
+    "family": "other",
+    "created_at": null,
+    "context_window": 8192,
+    "max_output_tokens": 16384,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "structured_output",
+      "batch",
+      "caching"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.075,
+          "output_per_million": 0.3
+        },
+        "batch": {
+          "input_per_million": 0.0375,
+          "output_per_million": 0.15
+        }
+      }
+    },
+    "metadata": {
+      "version": "gemini-2.5-flash-exp-tts-2025-05-19",
+      "description": "Gemini 2.5 Flash Preview TTS",
+      "supported_generation_methods": [
+        "countTokens",
+        "generateContent"
+      ]
+    }
   },
   {
     "id": "gemini-2.5-pro",
@@ -451,46 +1401,64 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "version": "2.5",
+      "description": "Stable release (June 17th, 2025) of Gemini 2.5 Pro",
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens",
+        "createCachedContent",
+        "batchGenerateContent"
+      ]
+    }
   },
   {
     "id": "gemini-2.5-pro-preview-tts",
-    "name": "Gemini 2.5 Pro",
+    "name": "Gemini 2.5 Pro Preview TTS",
     "provider": "gemini",
-    "family": "gemini-2.5-pro",
+    "family": "other",
     "created_at": null,
-    "context_window": 1048576,
-    "max_output_tokens": 65536,
+    "context_window": 8192,
+    "max_output_tokens": 16384,
     "knowledge_cutoff": null,
     "modalities": {
       "input": [
-        "audio",
+        "text",
         "image",
-        "text"
+        "pdf",
+        "video"
       ],
       "output": [
         "text"
       ]
     },
     "capabilities": [
-      "batch",
+      "streaming",
       "function_calling",
-      "structured_output"
+      "structured_output",
+      "caching"
     ],
     "pricing": {
       "text_tokens": {
         "standard": {
-          "input_per_million": 1.25,
-          "cached_input_per_million": 0.125,
-          "output_per_million": 10.0
+          "input_per_million": 0.075,
+          "output_per_million": 0.3
         },
         "batch": {
-          "input_per_million": 0.625,
-          "output_per_million": 5.0
+          "input_per_million": 0.0375,
+          "output_per_million": 0.15
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "version": "gemini-2.5-pro-preview-tts-2025-05-19",
+      "description": "Gemini 2.5 Pro Preview TTS",
+      "supported_generation_methods": [
+        "countTokens",
+        "generateContent",
+        "batchGenerateContent"
+      ]
+    }
   },
   {
     "id": "gemini-3-flash-preview",
@@ -529,7 +1497,64 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "version": "3-flash-preview-12-2025",
+      "description": "Gemini 3 Flash Preview",
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens",
+        "createCachedContent",
+        "batchGenerateContent"
+      ]
+    }
+  },
+  {
+    "id": "gemini-3-pro-image-preview",
+    "name": "Nano Banana Pro",
+    "provider": "gemini",
+    "family": "other",
+    "created_at": null,
+    "context_window": 131072,
+    "max_output_tokens": 32768,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "structured_output",
+      "caching"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.075,
+          "output_per_million": 0.3
+        },
+        "batch": {
+          "input_per_million": 0.0375,
+          "output_per_million": 0.15
+        }
+      }
+    },
+    "metadata": {
+      "version": "3.0",
+      "description": "Gemini 3 Pro Image Preview",
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens",
+        "batchGenerateContent"
+      ]
+    }
   },
   {
     "id": "gemini-3-pro-preview",
@@ -568,7 +1593,1055 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "version": "3-pro-preview-11-2025",
+      "description": "Gemini 3 Pro Preview",
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens",
+        "createCachedContent",
+        "batchGenerateContent"
+      ]
+    }
+  },
+  {
+    "id": "gemini-embedding-001",
+    "name": "Gemini Embedding 001",
+    "provider": "gemini",
+    "family": "embedding1",
+    "created_at": null,
+    "context_window": 2048,
+    "max_output_tokens": 1,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "video"
+      ],
+      "output": [
+        "text",
+        "embeddings"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "batch"
+    ],
+    "pricing": {
+      "embeddings": {
+        "standard": {
+          "input_per_million": 0.002
+        }
+      }
+    },
+    "metadata": {
+      "version": "001",
+      "description": "Obtain a distributed representation of a text.",
+      "supported_generation_methods": [
+        "embedContent",
+        "countTextTokens",
+        "countTokens",
+        "asyncBatchEmbedContent"
+      ]
+    }
+  },
+  {
+    "id": "gemini-embedding-exp",
+    "name": "Gemini Embedding Experimental",
+    "provider": "gemini",
+    "family": "gemini_embedding_exp",
+    "created_at": null,
+    "context_window": 8192,
+    "max_output_tokens": 1,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf",
+        "video"
+      ],
+      "output": [
+        "text",
+        "embeddings"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "structured_output",
+      "batch",
+      "caching"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.002,
+          "output_per_million": 0.004
+        },
+        "batch": {
+          "input_per_million": 0.001,
+          "output_per_million": 0.002
+        }
+      },
+      "embeddings": {
+        "standard": {
+          "input_per_million": 0.002
+        }
+      }
+    },
+    "metadata": {
+      "version": "exp-03-07",
+      "description": "Obtain a distributed representation of a text.",
+      "supported_generation_methods": [
+        "embedContent",
+        "countTextTokens",
+        "countTokens"
+      ]
+    }
+  },
+  {
+    "id": "gemini-embedding-exp-03-07",
+    "name": "Gemini Embedding Experimental 03-07",
+    "provider": "gemini",
+    "family": "gemini_embedding_exp",
+    "created_at": null,
+    "context_window": 8192,
+    "max_output_tokens": 1,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf",
+        "video"
+      ],
+      "output": [
+        "text",
+        "embeddings"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "structured_output",
+      "batch",
+      "caching"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.002,
+          "output_per_million": 0.004
+        },
+        "batch": {
+          "input_per_million": 0.001,
+          "output_per_million": 0.002
+        }
+      },
+      "embeddings": {
+        "standard": {
+          "input_per_million": 0.002
+        }
+      }
+    },
+    "metadata": {
+      "version": "exp-03-07",
+      "description": "Obtain a distributed representation of a text.",
+      "supported_generation_methods": [
+        "embedContent",
+        "countTextTokens",
+        "countTokens"
+      ]
+    }
+  },
+  {
+    "id": "gemini-exp-1206",
+    "name": "Gemini Experimental 1206",
+    "provider": "gemini",
+    "family": "other",
+    "created_at": null,
+    "context_window": 1048576,
+    "max_output_tokens": 65536,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "structured_output",
+      "caching"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.075,
+          "output_per_million": 0.3
+        },
+        "batch": {
+          "input_per_million": 0.0375,
+          "output_per_million": 0.15
+        }
+      }
+    },
+    "metadata": {
+      "version": "2.5-exp-03-25",
+      "description": "Experimental release (March 25th, 2025) of Gemini 2.5 Pro",
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens",
+        "createCachedContent",
+        "batchGenerateContent"
+      ]
+    }
+  },
+  {
+    "id": "gemini-flash-latest",
+    "name": "Gemini Flash Latest",
+    "provider": "gemini",
+    "family": "other",
+    "created_at": null,
+    "context_window": 1048576,
+    "max_output_tokens": 65536,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "structured_output",
+      "batch",
+      "caching"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.075,
+          "output_per_million": 0.3
+        },
+        "batch": {
+          "input_per_million": 0.0375,
+          "output_per_million": 0.15
+        }
+      }
+    },
+    "metadata": {
+      "version": "Gemini Flash Latest",
+      "description": "Latest release of Gemini Flash",
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens",
+        "createCachedContent",
+        "batchGenerateContent"
+      ]
+    }
+  },
+  {
+    "id": "gemini-flash-lite-latest",
+    "name": "Gemini Flash-Lite Latest",
+    "provider": "gemini",
+    "family": "other",
+    "created_at": null,
+    "context_window": 1048576,
+    "max_output_tokens": 65536,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "structured_output",
+      "batch"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.075,
+          "output_per_million": 0.3
+        },
+        "batch": {
+          "input_per_million": 0.0375,
+          "output_per_million": 0.15
+        }
+      }
+    },
+    "metadata": {
+      "version": "Gemini Flash-Lite Latest",
+      "description": "Latest release of Gemini Flash-Lite",
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens",
+        "createCachedContent",
+        "batchGenerateContent"
+      ]
+    }
+  },
+  {
+    "id": "gemini-pro-latest",
+    "name": "Gemini Pro Latest",
+    "provider": "gemini",
+    "family": "other",
+    "created_at": null,
+    "context_window": 1048576,
+    "max_output_tokens": 65536,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "structured_output",
+      "caching"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.075,
+          "output_per_million": 0.3
+        },
+        "batch": {
+          "input_per_million": 0.0375,
+          "output_per_million": 0.15
+        }
+      }
+    },
+    "metadata": {
+      "version": "Gemini Pro Latest",
+      "description": "Latest release of Gemini Pro",
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens",
+        "createCachedContent",
+        "batchGenerateContent"
+      ]
+    }
+  },
+  {
+    "id": "gemini-robotics-er-1.5-preview",
+    "name": "Gemini Robotics-ER 1.5 Preview",
+    "provider": "gemini",
+    "family": "other",
+    "created_at": null,
+    "context_window": 1048576,
+    "max_output_tokens": 65536,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "structured_output",
+      "caching"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.075,
+          "output_per_million": 0.3
+        },
+        "batch": {
+          "input_per_million": 0.0375,
+          "output_per_million": 0.15
+        }
+      }
+    },
+    "metadata": {
+      "version": "1.5-preview",
+      "description": "Gemini Robotics-ER 1.5 Preview",
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens"
+      ]
+    }
+  },
+  {
+    "id": "gemma-3-12b-it",
+    "name": "Gemma 3 12B",
+    "provider": "gemini",
+    "family": "other",
+    "created_at": null,
+    "context_window": 32768,
+    "max_output_tokens": 8192,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.075,
+          "output_per_million": 0.3
+        },
+        "batch": {
+          "input_per_million": 0.0375,
+          "output_per_million": 0.15
+        }
+      }
+    },
+    "metadata": {
+      "version": "001",
+      "description": null,
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens"
+      ]
+    }
+  },
+  {
+    "id": "gemma-3-1b-it",
+    "name": "Gemma 3 1B",
+    "provider": "gemini",
+    "family": "other",
+    "created_at": null,
+    "context_window": 32768,
+    "max_output_tokens": 8192,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.075,
+          "output_per_million": 0.3
+        },
+        "batch": {
+          "input_per_million": 0.0375,
+          "output_per_million": 0.15
+        }
+      }
+    },
+    "metadata": {
+      "version": "001",
+      "description": null,
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens"
+      ]
+    }
+  },
+  {
+    "id": "gemma-3-27b-it",
+    "name": "Gemma 3 27B",
+    "provider": "gemini",
+    "family": "other",
+    "created_at": null,
+    "context_window": 131072,
+    "max_output_tokens": 8192,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.075,
+          "output_per_million": 0.3
+        },
+        "batch": {
+          "input_per_million": 0.0375,
+          "output_per_million": 0.15
+        }
+      }
+    },
+    "metadata": {
+      "version": "001",
+      "description": null,
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens"
+      ]
+    }
+  },
+  {
+    "id": "gemma-3-4b-it",
+    "name": "Gemma 3 4B",
+    "provider": "gemini",
+    "family": "other",
+    "created_at": null,
+    "context_window": 32768,
+    "max_output_tokens": 8192,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.075,
+          "output_per_million": 0.3
+        },
+        "batch": {
+          "input_per_million": 0.0375,
+          "output_per_million": 0.15
+        }
+      }
+    },
+    "metadata": {
+      "version": "001",
+      "description": null,
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens"
+      ]
+    }
+  },
+  {
+    "id": "gemma-3n-e2b-it",
+    "name": "Gemma 3n E2B",
+    "provider": "gemini",
+    "family": "other",
+    "created_at": null,
+    "context_window": 8192,
+    "max_output_tokens": 2048,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.075,
+          "output_per_million": 0.3
+        },
+        "batch": {
+          "input_per_million": 0.0375,
+          "output_per_million": 0.15
+        }
+      }
+    },
+    "metadata": {
+      "version": "001",
+      "description": null,
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens"
+      ]
+    }
+  },
+  {
+    "id": "gemma-3n-e4b-it",
+    "name": "Gemma 3n E4B",
+    "provider": "gemini",
+    "family": "other",
+    "created_at": null,
+    "context_window": 8192,
+    "max_output_tokens": 2048,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.075,
+          "output_per_million": 0.3
+        },
+        "batch": {
+          "input_per_million": 0.0375,
+          "output_per_million": 0.15
+        }
+      }
+    },
+    "metadata": {
+      "version": "001",
+      "description": null,
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens"
+      ]
+    }
+  },
+  {
+    "id": "imagen-4.0-fast-generate-001",
+    "name": "Imagen 4 Fast",
+    "provider": "gemini",
+    "family": "other",
+    "created_at": null,
+    "context_window": 480,
+    "max_output_tokens": 8192,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "image"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {},
+    "metadata": {
+      "version": "001",
+      "description": "Vertex served Imagen 4.0 Fast model",
+      "supported_generation_methods": [
+        "predict"
+      ]
+    }
+  },
+  {
+    "id": "imagen-4.0-generate-001",
+    "name": "Imagen 4",
+    "provider": "gemini",
+    "family": "other",
+    "created_at": null,
+    "context_window": 480,
+    "max_output_tokens": 8192,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "image"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {},
+    "metadata": {
+      "version": "001",
+      "description": "Vertex served Imagen 4.0 model",
+      "supported_generation_methods": [
+        "predict"
+      ]
+    }
+  },
+  {
+    "id": "imagen-4.0-generate-preview-06-06",
+    "name": "Imagen 4 (Preview)",
+    "provider": "gemini",
+    "family": "other",
+    "created_at": null,
+    "context_window": 480,
+    "max_output_tokens": 8192,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "image"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {},
+    "metadata": {
+      "version": "01",
+      "description": "Vertex served Imagen 4.0 model",
+      "supported_generation_methods": [
+        "predict"
+      ]
+    }
+  },
+  {
+    "id": "imagen-4.0-ultra-generate-001",
+    "name": "Imagen 4 Ultra",
+    "provider": "gemini",
+    "family": "other",
+    "created_at": null,
+    "context_window": 480,
+    "max_output_tokens": 8192,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "image"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {},
+    "metadata": {
+      "version": "001",
+      "description": "Vertex served Imagen 4.0 ultra model",
+      "supported_generation_methods": [
+        "predict"
+      ]
+    }
+  },
+  {
+    "id": "imagen-4.0-ultra-generate-preview-06-06",
+    "name": "Imagen 4 Ultra (Preview)",
+    "provider": "gemini",
+    "family": "other",
+    "created_at": null,
+    "context_window": 480,
+    "max_output_tokens": 8192,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "image"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {},
+    "metadata": {
+      "version": "01",
+      "description": "Vertex served Imagen 4.0 ultra model",
+      "supported_generation_methods": [
+        "predict"
+      ]
+    }
+  },
+  {
+    "id": "nano-banana-pro-preview",
+    "name": "Nano Banana Pro",
+    "provider": "gemini",
+    "family": "other",
+    "created_at": null,
+    "context_window": 131072,
+    "max_output_tokens": 32768,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "structured_output",
+      "caching"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.075,
+          "output_per_million": 0.3
+        },
+        "batch": {
+          "input_per_million": 0.0375,
+          "output_per_million": 0.15
+        }
+      }
+    },
+    "metadata": {
+      "version": "3.0",
+      "description": "Gemini 3 Pro Image Preview",
+      "supported_generation_methods": [
+        "generateContent",
+        "countTokens",
+        "batchGenerateContent"
+      ]
+    }
+  },
+  {
+    "id": "text-embedding-004",
+    "name": "Text Embedding 004",
+    "provider": "gemini",
+    "family": "embedding4",
+    "created_at": null,
+    "context_window": 2048,
+    "max_output_tokens": 1,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text",
+        "embeddings"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "batch"
+    ],
+    "pricing": {
+      "embeddings": {
+        "standard": {
+          "input_per_million": 0.002
+        }
+      }
+    },
+    "metadata": {
+      "version": "004",
+      "description": "Obtain a distributed representation of a text.",
+      "supported_generation_methods": [
+        "embedContent"
+      ]
+    }
+  },
+  {
+    "id": "veo-2.0-generate-001",
+    "name": "Veo 2",
+    "provider": "gemini",
+    "family": "other",
+    "created_at": null,
+    "context_window": 480,
+    "max_output_tokens": 8192,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.075,
+          "output_per_million": 0.3
+        },
+        "batch": {
+          "input_per_million": 0.0375,
+          "output_per_million": 0.15
+        }
+      }
+    },
+    "metadata": {
+      "version": "2.0",
+      "description": "Vertex served Veo 2 model. Access to this model requires billing to be enabled on the associated Google Cloud Platform account. Please visit https://console.cloud.google.com/billing to enable it.",
+      "supported_generation_methods": [
+        "predictLongRunning"
+      ]
+    }
+  },
+  {
+    "id": "veo-3.0-fast-generate-001",
+    "name": "Veo 3 fast",
+    "provider": "gemini",
+    "family": "other",
+    "created_at": null,
+    "context_window": 480,
+    "max_output_tokens": 8192,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.075,
+          "output_per_million": 0.3
+        },
+        "batch": {
+          "input_per_million": 0.0375,
+          "output_per_million": 0.15
+        }
+      }
+    },
+    "metadata": {
+      "version": "3.0",
+      "description": "Veo 3 fast",
+      "supported_generation_methods": [
+        "predictLongRunning"
+      ]
+    }
+  },
+  {
+    "id": "veo-3.0-generate-001",
+    "name": "Veo 3",
+    "provider": "gemini",
+    "family": "other",
+    "created_at": null,
+    "context_window": 480,
+    "max_output_tokens": 8192,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.075,
+          "output_per_million": 0.3
+        },
+        "batch": {
+          "input_per_million": 0.0375,
+          "output_per_million": 0.15
+        }
+      }
+    },
+    "metadata": {
+      "version": "3.0",
+      "description": "Veo 3",
+      "supported_generation_methods": [
+        "predictLongRunning"
+      ]
+    }
+  },
+  {
+    "id": "veo-3.1-generate-preview",
+    "name": "Veo 3.1",
+    "provider": "gemini",
+    "family": "other",
+    "created_at": null,
+    "context_window": 480,
+    "max_output_tokens": 8192,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.075,
+          "output_per_million": 0.3
+        },
+        "batch": {
+          "input_per_million": 0.0375,
+          "output_per_million": 0.15
+        }
+      }
+    },
+    "metadata": {
+      "version": "3.1",
+      "description": "Veo 3.1",
+      "supported_generation_methods": [
+        "predictLongRunning"
+      ]
+    }
   },
   {
     "id": "babbage-002",
@@ -597,7 +2670,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "chatgpt-4o-latest",
@@ -627,7 +2703,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "chatgpt-image-latest",
@@ -659,7 +2738,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "codex-mini-latest",
@@ -789,7 +2871,10 @@
     },
     "capabilities": [],
     "pricing": {},
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "dall-e-3",
@@ -811,7 +2896,10 @@
     },
     "capabilities": [],
     "pricing": {},
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "davinci-002",
@@ -840,7 +2928,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-3.5-turbo",
@@ -875,7 +2966,175 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "openai"
+    }
+  },
+  {
+    "id": "gpt-3.5-turbo-0125",
+    "name": "GPT-3.5 Turbo 0125",
+    "provider": "openai",
+    "family": "gpt35_turbo",
+    "created_at": "2024-01-24 01:19:18 +0300",
+    "context_window": 16385,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.5,
+          "output_per_million": 1.5
+        }
+      }
+    },
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
+  },
+  {
+    "id": "gpt-3.5-turbo-1106",
+    "name": "GPT-3.5 Turbo 1106",
+    "provider": "openai",
+    "family": "gpt35_turbo",
+    "created_at": "2023-11-03 00:15:48 +0300",
+    "context_window": 16385,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.5,
+          "output_per_million": 1.5
+        }
+      }
+    },
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
+  },
+  {
+    "id": "gpt-3.5-turbo-16k",
+    "name": "GPT-3.5 Turbo 16k",
+    "provider": "openai",
+    "family": "gpt35_turbo",
+    "created_at": "2023-05-11 01:35:02 +0300",
+    "context_window": 16385,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.5,
+          "output_per_million": 1.5
+        }
+      }
+    },
+    "metadata": {
+      "object": "model",
+      "owned_by": "openai-internal"
+    }
+  },
+  {
+    "id": "gpt-3.5-turbo-instruct",
+    "name": "GPT-3.5 Turbo Instruct",
+    "provider": "openai",
+    "family": "gpt35_turbo",
+    "created_at": "2023-08-24 21:23:47 +0300",
+    "context_window": 16385,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.5,
+          "output_per_million": 1.5
+        }
+      }
+    },
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
+  },
+  {
+    "id": "gpt-3.5-turbo-instruct-0914",
+    "name": "GPT-3.5 Turbo Instruct 0914",
+    "provider": "openai",
+    "family": "gpt35_turbo",
+    "created_at": "2023-09-08 00:34:32 +0300",
+    "context_window": 16385,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.5,
+          "output_per_million": 1.5
+        }
+      }
+    },
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-4",
@@ -910,7 +3169,43 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "openai"
+    }
+  },
+  {
+    "id": "gpt-4-0125-preview",
+    "name": "GPT-4 0125 Preview",
+    "provider": "openai",
+    "family": "other",
+    "created_at": "2024-01-23 22:20:12 +0300",
+    "context_window": 4096,
+    "max_output_tokens": 16384,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.5,
+          "output_per_million": 1.5
+        }
+      }
+    },
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-4-0613",
@@ -945,7 +3240,43 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "openai"
+    }
+  },
+  {
+    "id": "gpt-4-1106-preview",
+    "name": "GPT-4 1106 Preview",
+    "provider": "openai",
+    "family": "other",
+    "created_at": "2023-11-02 23:33:26 +0300",
+    "context_window": 4096,
+    "max_output_tokens": 16384,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.5,
+          "output_per_million": 1.5
+        }
+      }
+    },
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-4-turbo",
@@ -982,7 +3313,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-4-turbo-2024-04-09",
@@ -1019,7 +3353,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-4-turbo-preview",
@@ -1048,7 +3385,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-4.1",
@@ -1087,7 +3427,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-4.1-2025-04-14",
@@ -1126,7 +3469,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-4.1-mini",
@@ -1165,7 +3511,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-4.1-mini-2025-04-14",
@@ -1204,7 +3553,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-4.1-nano",
@@ -1243,7 +3595,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-4.1-nano-2025-04-14",
@@ -1282,7 +3637,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-4.5-preview",
@@ -1399,7 +3757,47 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
+  },
+  {
+    "id": "gpt-4o-2024-05-13",
+    "name": "GPT-4o 20240513",
+    "provider": "openai",
+    "family": "gpt4o",
+    "created_at": "2024-05-10 22:08:52 +0300",
+    "context_window": 128000,
+    "max_output_tokens": 16384,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 2.5,
+          "output_per_million": 10.0
+        }
+      }
+    },
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-4o-2024-08-06",
@@ -1438,7 +3836,47 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
+  },
+  {
+    "id": "gpt-4o-2024-11-20",
+    "name": "GPT-4o 20241120",
+    "provider": "openai",
+    "family": "gpt4o",
+    "created_at": "2025-02-12 06:39:03 +0300",
+    "context_window": 128000,
+    "max_output_tokens": 16384,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 2.5,
+          "output_per_million": 10.0
+        }
+      }
+    },
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-4o-audio-preview",
@@ -1471,7 +3909,84 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
+  },
+  {
+    "id": "gpt-4o-audio-preview-2024-12-17",
+    "name": "GPT-4o-Audio Preview 20241217",
+    "provider": "openai",
+    "family": "gpt4o_audio",
+    "created_at": "2024-12-12 23:10:39 +0300",
+    "context_window": 128000,
+    "max_output_tokens": 16384,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "audio"
+      ],
+      "output": [
+        "text",
+        "audio"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "speech_generation",
+      "transcription"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 2.5,
+          "output_per_million": 10.0
+        }
+      }
+    },
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
+  },
+  {
+    "id": "gpt-4o-audio-preview-2025-06-03",
+    "name": "GPT-4o-Audio Preview 20250603",
+    "provider": "openai",
+    "family": "gpt4o_audio",
+    "created_at": "2025-06-03 02:54:58 +0300",
+    "context_window": 128000,
+    "max_output_tokens": 16384,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "audio"
+      ],
+      "output": [
+        "text",
+        "audio"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "speech_generation",
+      "transcription"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 2.5,
+          "output_per_million": 10.0
+        }
+      }
+    },
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-4o-mini",
@@ -1510,7 +4025,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-4o-mini-2024-07-18",
@@ -1549,7 +4067,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-4o-mini-audio-preview",
@@ -1582,7 +4103,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-4o-mini-audio-preview-2024-12-17",
@@ -1615,7 +4139,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-4o-mini-realtime-preview",
@@ -1649,7 +4176,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-4o-mini-realtime-preview-2024-12-17",
@@ -1683,7 +4213,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-4o-mini-search-preview",
@@ -1714,7 +4247,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-4o-mini-search-preview-2025-03-11",
@@ -1745,7 +4281,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-4o-mini-transcribe",
@@ -1768,7 +4307,44 @@
     },
     "capabilities": [],
     "pricing": {},
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
+  },
+  {
+    "id": "gpt-4o-mini-transcribe-2025-03-20",
+    "name": "GPT-4o-Mini Transcribe 20250320",
+    "provider": "openai",
+    "family": "gpt4o_mini_transcribe",
+    "created_at": "2025-12-13 10:22:25 +0300",
+    "context_window": 16000,
+    "max_output_tokens": 2000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "audio"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.25,
+          "output_per_million": 5.0
+        }
+      }
+    },
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-4o-mini-transcribe-2025-12-15",
@@ -1791,7 +4367,10 @@
     },
     "capabilities": [],
     "pricing": {},
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-4o-mini-tts",
@@ -1813,7 +4392,45 @@
     },
     "capabilities": [],
     "pricing": {},
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
+  },
+  {
+    "id": "gpt-4o-mini-tts-2025-03-20",
+    "name": "GPT-4o-Mini Tts 20250320",
+    "provider": "openai",
+    "family": "gpt4o_mini_tts",
+    "created_at": "2025-12-13 10:25:31 +0300",
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "audio"
+      ],
+      "output": [
+        "text",
+        "audio"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.6,
+          "output_per_million": 12.0
+        }
+      }
+    },
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-4o-mini-tts-2025-12-15",
@@ -1835,7 +4452,10 @@
     },
     "capabilities": [],
     "pricing": {},
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-4o-realtime-preview",
@@ -1869,7 +4489,76 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
+  },
+  {
+    "id": "gpt-4o-realtime-preview-2024-12-17",
+    "name": "GPT-4o-Realtime Preview 20241217",
+    "provider": "openai",
+    "family": "gpt4o_realtime",
+    "created_at": "2024-12-11 22:30:30 +0300",
+    "context_window": 128000,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 5.0,
+          "output_per_million": 20.0
+        }
+      }
+    },
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
+  },
+  {
+    "id": "gpt-4o-realtime-preview-2025-06-03",
+    "name": "GPT-4o-Realtime Preview 20250603",
+    "provider": "openai",
+    "family": "gpt4o_realtime",
+    "created_at": "2025-06-03 02:43:58 +0300",
+    "context_window": 128000,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 5.0,
+          "output_per_million": 20.0
+        }
+      }
+    },
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-4o-search-preview",
@@ -1900,7 +4589,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-4o-search-preview-2025-03-11",
@@ -1931,7 +4623,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-4o-transcribe",
@@ -1961,7 +4656,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-4o-transcribe-diarize",
@@ -1991,7 +4689,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-5",
@@ -2030,7 +4731,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-5-2025-08-07",
@@ -2069,7 +4773,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-5-chat-latest",
@@ -2103,7 +4810,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-5-codex",
@@ -2137,7 +4847,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-5-mini",
@@ -2176,7 +4889,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-5-mini-2025-08-07",
@@ -2215,7 +4931,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-5-nano",
@@ -2254,7 +4973,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-5-nano-2025-08-07",
@@ -2293,7 +5015,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-5-pro",
@@ -2331,7 +5056,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-5-pro-2025-10-06",
@@ -2369,7 +5097,88 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
+  },
+  {
+    "id": "gpt-5-search-api",
+    "name": "GPT-5 Search Api",
+    "provider": "openai",
+    "family": "gpt5",
+    "created_at": "2025-10-03 21:03:49 +0300",
+    "context_window": 128000,
+    "max_output_tokens": 400000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "structured_output",
+      "reasoning"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.25,
+          "output_per_million": 10.0,
+          "cached_input_per_million": 0.125
+        }
+      }
+    },
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
+  },
+  {
+    "id": "gpt-5-search-api-2025-10-14",
+    "name": "GPT-5 Search Api 20251014",
+    "provider": "openai",
+    "family": "gpt5",
+    "created_at": "2025-10-10 00:06:00 +0300",
+    "context_window": 128000,
+    "max_output_tokens": 400000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming",
+      "function_calling",
+      "structured_output",
+      "reasoning"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.25,
+          "output_per_million": 10.0,
+          "cached_input_per_million": 0.125
+        }
+      }
+    },
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-5.1",
@@ -2408,7 +5217,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-5.1-2025-11-13",
@@ -2447,7 +5259,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-5.1-chat-latest",
@@ -2481,7 +5296,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-5.1-codex",
@@ -2515,7 +5333,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-5.1-codex-max",
@@ -2549,7 +5370,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-5.1-codex-mini",
@@ -2583,7 +5407,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-5.2",
@@ -2622,7 +5449,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-5.2-2025-12-11",
@@ -2661,7 +5491,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-5.2-chat-latest",
@@ -2695,7 +5528,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-5.2-pro",
@@ -2727,7 +5563,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-5.2-pro-2025-12-11",
@@ -2759,7 +5598,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-audio",
@@ -2792,7 +5634,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-audio-2025-08-28",
@@ -2825,7 +5670,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-audio-mini",
@@ -2858,7 +5706,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-audio-mini-2025-10-06",
@@ -2891,7 +5742,45 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
+  },
+  {
+    "id": "gpt-audio-mini-2025-12-15",
+    "name": "GPT-Audio Mini 20251215",
+    "provider": "openai",
+    "family": "other",
+    "created_at": "2025-12-15 03:53:28 +0300",
+    "context_window": 4096,
+    "max_output_tokens": 16384,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "audio"
+      ],
+      "output": [
+        "text",
+        "audio"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.5,
+          "output_per_million": 1.5
+        }
+      }
+    },
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-image-1",
@@ -2922,7 +5811,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-image-1-mini",
@@ -2953,7 +5845,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-image-1.5",
@@ -2985,7 +5880,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-image-1.5-2025-12-16",
@@ -3104,7 +6002,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-realtime-2025-08-28",
@@ -3139,7 +6040,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-realtime-mini",
@@ -3174,7 +6078,43 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
+  },
+  {
+    "id": "gpt-realtime-mini-2025-10-06",
+    "name": "GPT-Realtime Mini 20251006",
+    "provider": "openai",
+    "family": "other",
+    "created_at": "2025-10-03 21:46:15 +0300",
+    "context_window": 4096,
+    "max_output_tokens": 16384,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.5,
+          "output_per_million": 1.5
+        }
+      }
+    },
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "gpt-realtime-mini-2025-12-15",
@@ -3209,7 +6149,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "o1",
@@ -3248,7 +6191,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "o1-2024-12-17",
@@ -3287,7 +6233,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "o1-mini",
@@ -3451,7 +6400,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "o1-pro-2025-03-19",
@@ -3489,7 +6441,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "o3",
@@ -3528,7 +6483,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "o3-2025-04-16",
@@ -3567,7 +6525,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "o3-deep-research",
@@ -3679,7 +6640,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "o3-mini-2025-01-31",
@@ -3717,7 +6681,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "o3-pro",
@@ -3832,7 +6799,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "o4-mini-2025-04-16",
@@ -3871,7 +6841,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "o4-mini-deep-research",
@@ -3948,6 +6921,33 @@
     "metadata": {}
   },
   {
+    "id": "omni-moderation-2024-09-26",
+    "name": "Omni Moderation 20240926",
+    "provider": "openai",
+    "family": "moderation",
+    "created_at": "2024-11-27 22:07:46 +0300",
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "pdf"
+      ],
+      "output": [
+        "text",
+        "moderation"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {},
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
+  },
+  {
     "id": "omni-moderation-latest",
     "name": "omni-moderation-latest",
     "provider": "openai",
@@ -3970,7 +6970,10 @@
       "batch"
     ],
     "pricing": {},
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "sora-2",
@@ -3999,7 +7002,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "sora-2-2025-10-06",
@@ -4051,7 +7057,10 @@
     },
     "capabilities": [],
     "pricing": {},
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "sora-2-pro-2025-10-06",
@@ -4115,7 +7124,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "text-embedding-3-small",
@@ -4156,7 +7168,10 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "text-embedding-ada-002",
@@ -4197,11 +7212,14 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "openai-internal"
+    }
   },
   {
     "id": "text-moderation-latest",
-    "name": "text-moderation-latest",
+    "name": "text-moderation",
     "provider": "openai",
     "family": "text-moderation-latest",
     "created_at": null,
@@ -4269,7 +7287,45 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "openai-internal"
+    }
+  },
+  {
+    "id": "tts-1-1106",
+    "name": "TTS-1 1106",
+    "provider": "openai",
+    "family": "tts1",
+    "created_at": "2023-11-04 02:14:01 +0300",
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "audio"
+      ],
+      "output": [
+        "text",
+        "audio"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 15.0,
+          "output_per_million": 15.0
+        }
+      }
+    },
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "tts-1-hd",
@@ -4297,7 +7353,45 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
+  },
+  {
+    "id": "tts-1-hd-1106",
+    "name": "TTS-1 HD 1106",
+    "provider": "openai",
+    "family": "tts1_hd",
+    "created_at": "2023-11-04 02:18:53 +0300",
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text",
+        "audio"
+      ],
+      "output": [
+        "text",
+        "audio"
+      ]
+    },
+    "capabilities": [
+      "streaming"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 30.0,
+          "output_per_million": 30.0
+        }
+      }
+    },
+    "metadata": {
+      "object": "model",
+      "owned_by": "system"
+    }
   },
   {
     "id": "whisper-1",
@@ -4326,6 +7420,9 @@
         }
       }
     },
-    "metadata": {}
+    "metadata": {
+      "object": "model",
+      "owned_by": "openai-internal"
+    }
   }
 ]
