@@ -1,0 +1,4331 @@
+[
+  {
+    "id": "deepseek-chat",
+    "name": "deepseek-chat",
+    "provider": "deepseek",
+    "family": "deepseek-chat",
+    "created_at": null,
+    "context_window": 128000,
+    "max_output_tokens": 8000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.28,
+          "cached_input_per_million": 0.028,
+          "output_per_million": 0.42
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "deepseek-reasoner",
+    "name": "deepseek-reasoner",
+    "provider": "deepseek",
+    "family": "deepseek-reasoner",
+    "created_at": null,
+    "context_window": 128000,
+    "max_output_tokens": 64000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.28,
+          "cached_input_per_million": 0.028,
+          "output_per_million": 0.42
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gemini-2.0-flash",
+    "name": "Gemini 2.0 Flash",
+    "provider": "gemini",
+    "family": "gemini-2.0-flash",
+    "created_at": null,
+    "context_window": 1048576,
+    "max_output_tokens": 8192,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "audio",
+        "image",
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.1,
+          "cached_input_per_million": 0.025,
+          "output_per_million": 0.4
+        },
+        "batch": {
+          "input_per_million": 0.05,
+          "output_per_million": 0.2
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gemini-2.0-flash-001",
+    "name": "Gemini 2.0 Flash",
+    "provider": "gemini",
+    "family": "gemini-2.0-flash",
+    "created_at": null,
+    "context_window": 1048576,
+    "max_output_tokens": 8192,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "audio",
+        "image",
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.1,
+          "cached_input_per_million": 0.025,
+          "output_per_million": 0.4
+        },
+        "batch": {
+          "input_per_million": 0.05,
+          "output_per_million": 0.2
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gemini-2.0-flash-exp",
+    "name": "Gemini 2.0 Flash",
+    "provider": "gemini",
+    "family": "gemini-2.0-flash",
+    "created_at": null,
+    "context_window": 1048576,
+    "max_output_tokens": 8192,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "audio",
+        "image",
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.1,
+          "cached_input_per_million": 0.025,
+          "output_per_million": 0.4
+        },
+        "batch": {
+          "input_per_million": 0.05,
+          "output_per_million": 0.2
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gemini-2.0-flash-lite",
+    "name": "Gemini 2.0 Flash-Lite",
+    "provider": "gemini",
+    "family": "gemini-2.0-flash-lite",
+    "created_at": null,
+    "context_window": 1048576,
+    "max_output_tokens": 8192,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "audio",
+        "image",
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.1,
+          "cached_input_per_million": 0.025,
+          "output_per_million": 0.4
+        },
+        "batch": {
+          "input_per_million": 0.05,
+          "output_per_million": 0.2
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gemini-2.0-flash-lite-001",
+    "name": "Gemini 2.0 Flash-Lite",
+    "provider": "gemini",
+    "family": "gemini-2.0-flash-lite",
+    "created_at": null,
+    "context_window": 1048576,
+    "max_output_tokens": 8192,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "audio",
+        "image",
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.1,
+          "cached_input_per_million": 0.025,
+          "output_per_million": 0.4
+        },
+        "batch": {
+          "input_per_million": 0.05,
+          "output_per_million": 0.2
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gemini-2.5-flash",
+    "name": "Gemini 2.5 Flash",
+    "provider": "gemini",
+    "family": "gemini-2.5-flash",
+    "created_at": null,
+    "context_window": 1048576,
+    "max_output_tokens": 65536,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "audio",
+        "image",
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.3,
+          "cached_input_per_million": 0.03,
+          "output_per_million": 2.5
+        },
+        "batch": {
+          "input_per_million": 0.15,
+          "output_per_million": 1.25
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gemini-2.5-flash-lite",
+    "name": "Gemini 2.5 Flash-Lite",
+    "provider": "gemini",
+    "family": "gemini-2.5-flash-lite",
+    "created_at": null,
+    "context_window": 1048576,
+    "max_output_tokens": 65536,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "audio",
+        "image",
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.3,
+          "cached_input_per_million": 0.03,
+          "output_per_million": 2.5
+        },
+        "batch": {
+          "input_per_million": 0.15,
+          "output_per_million": 1.25
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gemini-2.5-flash-lite-preview-09-2025",
+    "name": "Gemini 2.5 Flash-Lite",
+    "provider": "gemini",
+    "family": "gemini-2.5-flash-lite",
+    "created_at": null,
+    "context_window": 1048576,
+    "max_output_tokens": 65536,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "audio",
+        "image",
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.3,
+          "cached_input_per_million": 0.03,
+          "output_per_million": 2.5
+        },
+        "batch": {
+          "input_per_million": 0.15,
+          "output_per_million": 1.25
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gemini-2.5-flash-preview-09-2025",
+    "name": "Gemini 2.5 Flash",
+    "provider": "gemini",
+    "family": "gemini-2.5-flash",
+    "created_at": null,
+    "context_window": 1048576,
+    "max_output_tokens": 65536,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "audio",
+        "image",
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.3,
+          "cached_input_per_million": 0.03,
+          "output_per_million": 2.5
+        },
+        "batch": {
+          "input_per_million": 0.15,
+          "output_per_million": 1.25
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gemini-2.5-pro",
+    "name": "Gemini 2.5 Pro",
+    "provider": "gemini",
+    "family": "gemini-2.5-pro",
+    "created_at": null,
+    "context_window": 1048576,
+    "max_output_tokens": 65536,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "audio",
+        "image",
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.25,
+          "cached_input_per_million": 0.125,
+          "output_per_million": 10.0
+        },
+        "batch": {
+          "input_per_million": 0.625,
+          "output_per_million": 5.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gemini-2.5-pro-preview-tts",
+    "name": "Gemini 2.5 Pro",
+    "provider": "gemini",
+    "family": "gemini-2.5-pro",
+    "created_at": null,
+    "context_window": 1048576,
+    "max_output_tokens": 65536,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "audio",
+        "image",
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.25,
+          "cached_input_per_million": 0.125,
+          "output_per_million": 10.0
+        },
+        "batch": {
+          "input_per_million": 0.625,
+          "output_per_million": 5.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gemini-3-flash-preview",
+    "name": "Gemini 3 Flash",
+    "provider": "gemini",
+    "family": "gemini-3-flash",
+    "created_at": null,
+    "context_window": 1048576,
+    "max_output_tokens": 65536,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "audio",
+        "image",
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.5,
+          "cached_input_per_million": 0.05,
+          "output_per_million": 3.0
+        },
+        "batch": {
+          "input_per_million": 0.25,
+          "output_per_million": 1.5
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gemini-3-pro-preview",
+    "name": "Gemini 3 Pro",
+    "provider": "gemini",
+    "family": "gemini-3-pro",
+    "created_at": null,
+    "context_window": 1048576,
+    "max_output_tokens": 65536,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "audio",
+        "image",
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 2.0,
+          "cached_input_per_million": 0.2,
+          "output_per_million": 12.0
+        },
+        "batch": {
+          "input_per_million": 1.0,
+          "output_per_million": 6.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "babbage-002",
+    "name": "babbage-002",
+    "provider": "openai",
+    "family": "babbage-002",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": 16384,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.4,
+          "output_per_million": 0.4
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "chatgpt-4o-latest",
+    "name": "ChatGPT-4o",
+    "provider": "openai",
+    "family": "chatgpt-4o-latest",
+    "created_at": null,
+    "context_window": 128000,
+    "max_output_tokens": 16384,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 5.0,
+          "output_per_million": 15.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "chatgpt-image-latest",
+    "name": "chatgpt-image-latest",
+    "provider": "openai",
+    "family": "chatgpt-image-latest",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "image",
+        "text"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 5.0,
+          "cached_input_per_million": 1.25,
+          "output_per_million": 10.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "codex-mini-latest",
+    "name": "codex-mini-latest",
+    "provider": "openai",
+    "family": "codex-mini-latest",
+    "created_at": null,
+    "context_window": 200000,
+    "max_output_tokens": 100000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.5,
+          "cached_input_per_million": 0.375,
+          "output_per_million": 6.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "computer-use-preview",
+    "name": "computer-use-preview",
+    "provider": "openai",
+    "family": "computer-use-preview",
+    "created_at": null,
+    "context_window": 8192,
+    "max_output_tokens": 1024,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 3.0,
+          "output_per_million": 12.0
+        },
+        "batch": {
+          "input_per_million": 1.5,
+          "output_per_million": 6.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "computer-use-preview-2025-03-11",
+    "name": "computer-use-preview",
+    "provider": "openai",
+    "family": "computer-use-preview",
+    "created_at": null,
+    "context_window": 8192,
+    "max_output_tokens": 1024,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 3.0,
+          "output_per_million": 12.0
+        },
+        "batch": {
+          "input_per_million": 1.5,
+          "output_per_million": 6.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "dall-e-2",
+    "name": "DALL·E 2",
+    "provider": "openai",
+    "family": "dall-e-2",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "image"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {},
+    "metadata": {}
+  },
+  {
+    "id": "dall-e-3",
+    "name": "DALL·E 3",
+    "provider": "openai",
+    "family": "dall-e-3",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "image"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {},
+    "metadata": {}
+  },
+  {
+    "id": "davinci-002",
+    "name": "davinci-002",
+    "provider": "openai",
+    "family": "davinci-002",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": 16384,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 2.0,
+          "output_per_million": 2.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-3.5-turbo",
+    "name": "GPT-3.5 Turbo",
+    "provider": "openai",
+    "family": "gpt-3.5-turbo",
+    "created_at": null,
+    "context_window": 16385,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.5,
+          "output_per_million": 1.5
+        },
+        "batch": {
+          "input_per_million": 0.25,
+          "output_per_million": 0.75
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-4",
+    "name": "GPT-4",
+    "provider": "openai",
+    "family": "gpt-4",
+    "created_at": null,
+    "context_window": 8192,
+    "max_output_tokens": 8192,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 30.0,
+          "output_per_million": 60.0
+        },
+        "batch": {
+          "input_per_million": 15.0,
+          "output_per_million": 30.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-4-0613",
+    "name": "GPT-4",
+    "provider": "openai",
+    "family": "gpt-4",
+    "created_at": null,
+    "context_window": 8192,
+    "max_output_tokens": 8192,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 30.0,
+          "output_per_million": 60.0
+        },
+        "batch": {
+          "input_per_million": 15.0,
+          "output_per_million": 30.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-4-turbo",
+    "name": "GPT-4 Turbo",
+    "provider": "openai",
+    "family": "gpt-4-turbo",
+    "created_at": null,
+    "context_window": 128000,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 10.0,
+          "output_per_million": 30.0
+        },
+        "batch": {
+          "input_per_million": 5.0,
+          "output_per_million": 15.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-4-turbo-2024-04-09",
+    "name": "GPT-4 Turbo",
+    "provider": "openai",
+    "family": "gpt-4-turbo",
+    "created_at": null,
+    "context_window": 128000,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 10.0,
+          "output_per_million": 30.0
+        },
+        "batch": {
+          "input_per_million": 5.0,
+          "output_per_million": 15.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-4-turbo-preview",
+    "name": "GPT-4 Turbo Preview",
+    "provider": "openai",
+    "family": "gpt-4-turbo-preview",
+    "created_at": null,
+    "context_window": 128000,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 10.0,
+          "output_per_million": 30.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-4.1",
+    "name": "GPT-4.1",
+    "provider": "openai",
+    "family": "gpt-4.1",
+    "created_at": null,
+    "context_window": 1047576,
+    "max_output_tokens": 32768,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 2.0,
+          "cached_input_per_million": 0.5,
+          "output_per_million": 8.0
+        },
+        "batch": {
+          "input_per_million": 1.0,
+          "output_per_million": 4.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-4.1-2025-04-14",
+    "name": "GPT-4.1",
+    "provider": "openai",
+    "family": "gpt-4.1",
+    "created_at": null,
+    "context_window": 1047576,
+    "max_output_tokens": 32768,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 2.0,
+          "cached_input_per_million": 0.5,
+          "output_per_million": 8.0
+        },
+        "batch": {
+          "input_per_million": 1.0,
+          "output_per_million": 4.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-4.1-mini",
+    "name": "GPT-4.1 mini",
+    "provider": "openai",
+    "family": "gpt-4.1-mini",
+    "created_at": null,
+    "context_window": 1047576,
+    "max_output_tokens": 32768,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.4,
+          "cached_input_per_million": 0.1,
+          "output_per_million": 1.6
+        },
+        "batch": {
+          "input_per_million": 0.2,
+          "output_per_million": 0.8
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-4.1-mini-2025-04-14",
+    "name": "GPT-4.1 mini",
+    "provider": "openai",
+    "family": "gpt-4.1-mini",
+    "created_at": null,
+    "context_window": 1047576,
+    "max_output_tokens": 32768,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.4,
+          "cached_input_per_million": 0.1,
+          "output_per_million": 1.6
+        },
+        "batch": {
+          "input_per_million": 0.2,
+          "output_per_million": 0.8
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-4.1-nano",
+    "name": "GPT-4.1 nano",
+    "provider": "openai",
+    "family": "gpt-4.1-nano",
+    "created_at": null,
+    "context_window": 1047576,
+    "max_output_tokens": 32768,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.1,
+          "cached_input_per_million": 0.025,
+          "output_per_million": 0.4
+        },
+        "batch": {
+          "input_per_million": 0.05,
+          "output_per_million": 0.2
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-4.1-nano-2025-04-14",
+    "name": "GPT-4.1 nano",
+    "provider": "openai",
+    "family": "gpt-4.1-nano",
+    "created_at": null,
+    "context_window": 1047576,
+    "max_output_tokens": 32768,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.1,
+          "cached_input_per_million": 0.025,
+          "output_per_million": 0.4
+        },
+        "batch": {
+          "input_per_million": 0.05,
+          "output_per_million": 0.2
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-4.5-preview",
+    "name": "GPT-4.5 Preview (Deprecated)",
+    "provider": "openai",
+    "family": "gpt-4.5-preview",
+    "created_at": null,
+    "context_window": 128000,
+    "max_output_tokens": 16384,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 75.0,
+          "cached_input_per_million": 37.5,
+          "output_per_million": 150.0
+        },
+        "batch": {
+          "input_per_million": 37.5,
+          "output_per_million": 75.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-4.5-preview-2025-02-27",
+    "name": "GPT-4.5 Preview (Deprecated)",
+    "provider": "openai",
+    "family": "gpt-4.5-preview",
+    "created_at": null,
+    "context_window": 128000,
+    "max_output_tokens": 16384,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 75.0,
+          "cached_input_per_million": 37.5,
+          "output_per_million": 150.0
+        },
+        "batch": {
+          "input_per_million": 37.5,
+          "output_per_million": 75.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-4o",
+    "name": "GPT-4o",
+    "provider": "openai",
+    "family": "gpt-4o",
+    "created_at": null,
+    "context_window": 128000,
+    "max_output_tokens": 16384,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 2.5,
+          "cached_input_per_million": 1.25,
+          "output_per_million": 10.0
+        },
+        "batch": {
+          "input_per_million": 1.25,
+          "output_per_million": 5.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-4o-2024-08-06",
+    "name": "GPT-4o",
+    "provider": "openai",
+    "family": "gpt-4o",
+    "created_at": null,
+    "context_window": 128000,
+    "max_output_tokens": 16384,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 2.5,
+          "cached_input_per_million": 1.25,
+          "output_per_million": 10.0
+        },
+        "batch": {
+          "input_per_million": 1.25,
+          "output_per_million": 5.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-4o-audio-preview",
+    "name": "GPT-4o Audio",
+    "provider": "openai",
+    "family": "gpt-4o-audio-preview",
+    "created_at": null,
+    "context_window": 128000,
+    "max_output_tokens": 16384,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "audio",
+        "text"
+      ],
+      "output": [
+        "audio",
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "function_calling"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 2.5,
+          "output_per_million": 10.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-4o-mini",
+    "name": "GPT-4o mini",
+    "provider": "openai",
+    "family": "gpt-4o-mini",
+    "created_at": null,
+    "context_window": 128000,
+    "max_output_tokens": 16384,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.15,
+          "cached_input_per_million": 0.075,
+          "output_per_million": 0.6
+        },
+        "batch": {
+          "input_per_million": 0.075,
+          "output_per_million": 0.3
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-4o-mini-2024-07-18",
+    "name": "GPT-4o mini",
+    "provider": "openai",
+    "family": "gpt-4o-mini",
+    "created_at": null,
+    "context_window": 128000,
+    "max_output_tokens": 16384,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.15,
+          "cached_input_per_million": 0.075,
+          "output_per_million": 0.6
+        },
+        "batch": {
+          "input_per_million": 0.075,
+          "output_per_million": 0.3
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-4o-mini-audio-preview",
+    "name": "GPT-4o mini Audio",
+    "provider": "openai",
+    "family": "gpt-4o-mini-audio-preview",
+    "created_at": null,
+    "context_window": 128000,
+    "max_output_tokens": 16384,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "audio",
+        "text"
+      ],
+      "output": [
+        "audio",
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "function_calling"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.15,
+          "output_per_million": 0.6
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-4o-mini-audio-preview-2024-12-17",
+    "name": "GPT-4o mini Audio",
+    "provider": "openai",
+    "family": "gpt-4o-mini-audio-preview",
+    "created_at": null,
+    "context_window": 128000,
+    "max_output_tokens": 16384,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "audio",
+        "text"
+      ],
+      "output": [
+        "audio",
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "function_calling"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.15,
+          "output_per_million": 0.6
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-4o-mini-realtime-preview",
+    "name": "GPT-4o mini Realtime",
+    "provider": "openai",
+    "family": "gpt-4o-mini-realtime-preview",
+    "created_at": null,
+    "context_window": 16000,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "audio",
+        "text"
+      ],
+      "output": [
+        "audio",
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "function_calling"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.6,
+          "cached_input_per_million": 0.3,
+          "output_per_million": 2.4
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-4o-mini-realtime-preview-2024-12-17",
+    "name": "GPT-4o mini Realtime",
+    "provider": "openai",
+    "family": "gpt-4o-mini-realtime-preview",
+    "created_at": null,
+    "context_window": 16000,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "audio",
+        "text"
+      ],
+      "output": [
+        "audio",
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "function_calling"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.6,
+          "cached_input_per_million": 0.3,
+          "output_per_million": 2.4
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-4o-mini-search-preview",
+    "name": "GPT-4o mini Search Preview",
+    "provider": "openai",
+    "family": "gpt-4o-mini-search-preview",
+    "created_at": null,
+    "context_window": 128000,
+    "max_output_tokens": 16384,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.15,
+          "output_per_million": 0.6
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-4o-mini-search-preview-2025-03-11",
+    "name": "GPT-4o mini Search Preview",
+    "provider": "openai",
+    "family": "gpt-4o-mini-search-preview",
+    "created_at": null,
+    "context_window": 128000,
+    "max_output_tokens": 16384,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.15,
+          "output_per_million": 0.6
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-4o-mini-transcribe",
+    "name": "GPT-4o mini Transcribe",
+    "provider": "openai",
+    "family": "gpt-4o-mini-transcribe",
+    "created_at": null,
+    "context_window": 16000,
+    "max_output_tokens": 2000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "audio",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {},
+    "metadata": {}
+  },
+  {
+    "id": "gpt-4o-mini-transcribe-2025-12-15",
+    "name": "GPT-4o mini Transcribe",
+    "provider": "openai",
+    "family": "gpt-4o-mini-transcribe",
+    "created_at": null,
+    "context_window": 16000,
+    "max_output_tokens": 2000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "audio",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {},
+    "metadata": {}
+  },
+  {
+    "id": "gpt-4o-mini-tts",
+    "name": "GPT-4o mini TTS",
+    "provider": "openai",
+    "family": "gpt-4o-mini-tts",
+    "created_at": null,
+    "context_window": 2000,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "audio",
+        "embeddings"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {},
+    "metadata": {}
+  },
+  {
+    "id": "gpt-4o-mini-tts-2025-12-15",
+    "name": "GPT-4o mini TTS",
+    "provider": "openai",
+    "family": "gpt-4o-mini-tts",
+    "created_at": null,
+    "context_window": 2000,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "audio",
+        "embeddings"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {},
+    "metadata": {}
+  },
+  {
+    "id": "gpt-4o-realtime-preview",
+    "name": "GPT-4o Realtime",
+    "provider": "openai",
+    "family": "gpt-4o-realtime-preview",
+    "created_at": null,
+    "context_window": 32000,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "audio",
+        "text"
+      ],
+      "output": [
+        "audio",
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "function_calling"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 5.0,
+          "cached_input_per_million": 2.5,
+          "output_per_million": 20.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-4o-search-preview",
+    "name": "GPT-4o Search Preview",
+    "provider": "openai",
+    "family": "gpt-4o-search-preview",
+    "created_at": null,
+    "context_window": 128000,
+    "max_output_tokens": 16384,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 2.5,
+          "output_per_million": 10.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-4o-search-preview-2025-03-11",
+    "name": "GPT-4o Search Preview",
+    "provider": "openai",
+    "family": "gpt-4o-search-preview",
+    "created_at": null,
+    "context_window": 128000,
+    "max_output_tokens": 16384,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 2.5,
+          "output_per_million": 10.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-4o-transcribe",
+    "name": "GPT-4o Transcribe",
+    "provider": "openai",
+    "family": "gpt-4o-transcribe",
+    "created_at": null,
+    "context_window": 16000,
+    "max_output_tokens": 2000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "audio",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 2.5,
+          "output_per_million": 10.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-4o-transcribe-diarize",
+    "name": "GPT-4o Transcribe Diarize",
+    "provider": "openai",
+    "family": "gpt-4o-transcribe-diarize",
+    "created_at": null,
+    "context_window": 16000,
+    "max_output_tokens": 2000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "audio",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 2.5,
+          "output_per_million": 10.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-5",
+    "name": "GPT-5",
+    "provider": "openai",
+    "family": "gpt-5",
+    "created_at": null,
+    "context_window": 400000,
+    "max_output_tokens": 128000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.25,
+          "cached_input_per_million": 0.125,
+          "output_per_million": 10.0
+        },
+        "batch": {
+          "input_per_million": 0.625,
+          "output_per_million": 5.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-5-2025-08-07",
+    "name": "GPT-5",
+    "provider": "openai",
+    "family": "gpt-5",
+    "created_at": null,
+    "context_window": 400000,
+    "max_output_tokens": 128000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.25,
+          "cached_input_per_million": 0.125,
+          "output_per_million": 10.0
+        },
+        "batch": {
+          "input_per_million": 0.625,
+          "output_per_million": 5.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-5-chat-latest",
+    "name": "GPT-5 Chat",
+    "provider": "openai",
+    "family": "gpt-5-chat-latest",
+    "created_at": null,
+    "context_window": 128000,
+    "max_output_tokens": 16384,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.25,
+          "cached_input_per_million": 0.125,
+          "output_per_million": 10.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-5-codex",
+    "name": "GPT-5-Codex",
+    "provider": "openai",
+    "family": "gpt-5-codex",
+    "created_at": null,
+    "context_window": 400000,
+    "max_output_tokens": 128000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.25,
+          "cached_input_per_million": 0.125,
+          "output_per_million": 10.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-5-mini",
+    "name": "GPT-5 mini",
+    "provider": "openai",
+    "family": "gpt-5-mini",
+    "created_at": null,
+    "context_window": 400000,
+    "max_output_tokens": 128000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.25,
+          "cached_input_per_million": 0.025,
+          "output_per_million": 2.0
+        },
+        "batch": {
+          "input_per_million": 0.125,
+          "output_per_million": 1.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-5-mini-2025-08-07",
+    "name": "GPT-5 mini",
+    "provider": "openai",
+    "family": "gpt-5-mini",
+    "created_at": null,
+    "context_window": 400000,
+    "max_output_tokens": 128000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.25,
+          "cached_input_per_million": 0.025,
+          "output_per_million": 2.0
+        },
+        "batch": {
+          "input_per_million": 0.125,
+          "output_per_million": 1.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-5-nano",
+    "name": "GPT-5 nano",
+    "provider": "openai",
+    "family": "gpt-5-nano",
+    "created_at": null,
+    "context_window": 400000,
+    "max_output_tokens": 128000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.05,
+          "cached_input_per_million": 0.005,
+          "output_per_million": 0.4
+        },
+        "batch": {
+          "input_per_million": 0.025,
+          "output_per_million": 0.2
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-5-nano-2025-08-07",
+    "name": "GPT-5 nano",
+    "provider": "openai",
+    "family": "gpt-5-nano",
+    "created_at": null,
+    "context_window": 400000,
+    "max_output_tokens": 128000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.05,
+          "cached_input_per_million": 0.005,
+          "output_per_million": 0.4
+        },
+        "batch": {
+          "input_per_million": 0.025,
+          "output_per_million": 0.2
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-5-pro",
+    "name": "GPT-5 pro",
+    "provider": "openai",
+    "family": "gpt-5-pro",
+    "created_at": null,
+    "context_window": 400000,
+    "max_output_tokens": 272000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 15.0,
+          "output_per_million": 120.0
+        },
+        "batch": {
+          "input_per_million": 7.5,
+          "output_per_million": 60.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-5-pro-2025-10-06",
+    "name": "GPT-5 pro",
+    "provider": "openai",
+    "family": "gpt-5-pro",
+    "created_at": null,
+    "context_window": 400000,
+    "max_output_tokens": 272000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 15.0,
+          "output_per_million": 120.0
+        },
+        "batch": {
+          "input_per_million": 7.5,
+          "output_per_million": 60.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-5.1",
+    "name": "GPT-5.1",
+    "provider": "openai",
+    "family": "gpt-5.1",
+    "created_at": null,
+    "context_window": 400000,
+    "max_output_tokens": 128000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.25,
+          "cached_input_per_million": 0.125,
+          "output_per_million": 10.0
+        },
+        "batch": {
+          "input_per_million": 0.625,
+          "output_per_million": 5.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-5.1-2025-11-13",
+    "name": "GPT-5.1",
+    "provider": "openai",
+    "family": "gpt-5.1",
+    "created_at": null,
+    "context_window": 400000,
+    "max_output_tokens": 128000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.25,
+          "cached_input_per_million": 0.125,
+          "output_per_million": 10.0
+        },
+        "batch": {
+          "input_per_million": 0.625,
+          "output_per_million": 5.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-5.1-chat-latest",
+    "name": "GPT-5.1 Chat",
+    "provider": "openai",
+    "family": "gpt-5.1-chat-latest",
+    "created_at": null,
+    "context_window": 128000,
+    "max_output_tokens": 16384,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.25,
+          "cached_input_per_million": 0.125,
+          "output_per_million": 10.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-5.1-codex",
+    "name": "GPT-5.1 Codex",
+    "provider": "openai",
+    "family": "gpt-5.1-codex",
+    "created_at": null,
+    "context_window": 400000,
+    "max_output_tokens": 128000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.25,
+          "cached_input_per_million": 0.125,
+          "output_per_million": 10.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-5.1-codex-max",
+    "name": "GPT-5.1-Codex-Max",
+    "provider": "openai",
+    "family": "gpt-5.1-codex-max",
+    "created_at": null,
+    "context_window": 400000,
+    "max_output_tokens": 128000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.25,
+          "cached_input_per_million": 0.125,
+          "output_per_million": 10.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-5.1-codex-mini",
+    "name": "GPT-5.1 Codex mini",
+    "provider": "openai",
+    "family": "gpt-5.1-codex-mini",
+    "created_at": null,
+    "context_window": 400000,
+    "max_output_tokens": 128000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.25,
+          "cached_input_per_million": 0.025,
+          "output_per_million": 2.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-5.2",
+    "name": "GPT-5.2",
+    "provider": "openai",
+    "family": "gpt-5.2",
+    "created_at": null,
+    "context_window": 400000,
+    "max_output_tokens": 128000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.75,
+          "cached_input_per_million": 0.175,
+          "output_per_million": 14.0
+        },
+        "batch": {
+          "input_per_million": 0.875,
+          "output_per_million": 7.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-5.2-2025-12-11",
+    "name": "GPT-5.2",
+    "provider": "openai",
+    "family": "gpt-5.2",
+    "created_at": null,
+    "context_window": 400000,
+    "max_output_tokens": 128000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.75,
+          "cached_input_per_million": 0.175,
+          "output_per_million": 14.0
+        },
+        "batch": {
+          "input_per_million": 0.875,
+          "output_per_million": 7.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-5.2-chat-latest",
+    "name": "GPT-5.2 Chat",
+    "provider": "openai",
+    "family": "gpt-5.2-chat-latest",
+    "created_at": null,
+    "context_window": 128000,
+    "max_output_tokens": 16384,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.75,
+          "cached_input_per_million": 0.175,
+          "output_per_million": 14.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-5.2-pro",
+    "name": "GPT-5.2 pro",
+    "provider": "openai",
+    "family": "gpt-5.2-pro",
+    "created_at": null,
+    "context_window": 400000,
+    "max_output_tokens": 128000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "function_calling"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 21.0,
+          "output_per_million": 168.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-5.2-pro-2025-12-11",
+    "name": "GPT-5.2 pro",
+    "provider": "openai",
+    "family": "gpt-5.2-pro",
+    "created_at": null,
+    "context_window": 400000,
+    "max_output_tokens": 128000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "function_calling"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 21.0,
+          "output_per_million": 168.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-audio",
+    "name": "gpt-audio",
+    "provider": "openai",
+    "family": "gpt-audio",
+    "created_at": null,
+    "context_window": 128000,
+    "max_output_tokens": 16384,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "audio",
+        "text"
+      ],
+      "output": [
+        "audio",
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "function_calling"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 2.5,
+          "output_per_million": 10.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-audio-2025-08-28",
+    "name": "gpt-audio",
+    "provider": "openai",
+    "family": "gpt-audio",
+    "created_at": null,
+    "context_window": 128000,
+    "max_output_tokens": 16384,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "audio",
+        "text"
+      ],
+      "output": [
+        "audio",
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "function_calling"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 2.5,
+          "output_per_million": 10.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-audio-mini",
+    "name": "gpt-audio-mini",
+    "provider": "openai",
+    "family": "gpt-audio-mini",
+    "created_at": null,
+    "context_window": 128000,
+    "max_output_tokens": 16384,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "audio",
+        "text"
+      ],
+      "output": [
+        "audio",
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "function_calling"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.6,
+          "output_per_million": 2.4
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-audio-mini-2025-10-06",
+    "name": "gpt-audio-mini",
+    "provider": "openai",
+    "family": "gpt-audio-mini",
+    "created_at": null,
+    "context_window": 128000,
+    "max_output_tokens": 16384,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "audio",
+        "text"
+      ],
+      "output": [
+        "audio",
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "function_calling"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.6,
+          "output_per_million": 2.4
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-image-1",
+    "name": "GPT Image 1",
+    "provider": "openai",
+    "family": "gpt-image-1",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "image"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 5.0,
+          "cached_input_per_million": 1.25,
+          "output_per_million": 40.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-image-1-mini",
+    "name": "gpt-image-1-mini",
+    "provider": "openai",
+    "family": "gpt-image-1-mini",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "image"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 2.0,
+          "cached_input_per_million": 0.2,
+          "output_per_million": 8.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-image-1.5",
+    "name": "GPT Image 1.5",
+    "provider": "openai",
+    "family": "gpt-image-1.5",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "image",
+        "text"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 5.0,
+          "cached_input_per_million": 1.25,
+          "output_per_million": 10.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-image-1.5-2025-12-16",
+    "name": "GPT Image 1.5",
+    "provider": "openai",
+    "family": "gpt-image-1.5",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "image",
+        "text"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 5.0,
+          "cached_input_per_million": 1.25,
+          "output_per_million": 10.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-oss-120b",
+    "name": "gpt-oss-120b",
+    "provider": "openai",
+    "family": "gpt-oss-120b",
+    "created_at": null,
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {},
+    "metadata": {}
+  },
+  {
+    "id": "gpt-oss-20b",
+    "name": "gpt-oss-20b",
+    "provider": "openai",
+    "family": "gpt-oss-20b",
+    "created_at": null,
+    "context_window": 131072,
+    "max_output_tokens": 131072,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {},
+    "metadata": {}
+  },
+  {
+    "id": "gpt-realtime",
+    "name": "gpt-realtime",
+    "provider": "openai",
+    "family": "gpt-realtime",
+    "created_at": null,
+    "context_window": 32000,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "audio",
+        "image",
+        "text"
+      ],
+      "output": [
+        "audio",
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "function_calling"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 4.0,
+          "cached_input_per_million": 0.5,
+          "output_per_million": 16.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-realtime-2025-08-28",
+    "name": "gpt-realtime",
+    "provider": "openai",
+    "family": "gpt-realtime",
+    "created_at": null,
+    "context_window": 32000,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "audio",
+        "image",
+        "text"
+      ],
+      "output": [
+        "audio",
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "function_calling"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 4.0,
+          "cached_input_per_million": 0.5,
+          "output_per_million": 16.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-realtime-mini",
+    "name": "gpt-realtime-mini",
+    "provider": "openai",
+    "family": "gpt-realtime-mini",
+    "created_at": null,
+    "context_window": 32000,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "audio",
+        "image",
+        "text"
+      ],
+      "output": [
+        "audio",
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "function_calling"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.6,
+          "cached_input_per_million": 0.06,
+          "output_per_million": 2.4
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "gpt-realtime-mini-2025-12-15",
+    "name": "gpt-realtime-mini",
+    "provider": "openai",
+    "family": "gpt-realtime-mini",
+    "created_at": null,
+    "context_window": 32000,
+    "max_output_tokens": 4096,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "audio",
+        "image",
+        "text"
+      ],
+      "output": [
+        "audio",
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "function_calling"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.6,
+          "cached_input_per_million": 0.06,
+          "output_per_million": 2.4
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "o1",
+    "name": "o1",
+    "provider": "openai",
+    "family": "o1",
+    "created_at": null,
+    "context_window": 200000,
+    "max_output_tokens": 100000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 15.0,
+          "cached_input_per_million": 7.5,
+          "output_per_million": 60.0
+        },
+        "batch": {
+          "input_per_million": 7.5,
+          "output_per_million": 30.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "o1-2024-12-17",
+    "name": "o1",
+    "provider": "openai",
+    "family": "o1",
+    "created_at": null,
+    "context_window": 200000,
+    "max_output_tokens": 100000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 15.0,
+          "cached_input_per_million": 7.5,
+          "output_per_million": 60.0
+        },
+        "batch": {
+          "input_per_million": 7.5,
+          "output_per_million": 30.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "o1-mini",
+    "name": "o1-mini",
+    "provider": "openai",
+    "family": "o1-mini",
+    "created_at": null,
+    "context_window": 128000,
+    "max_output_tokens": 65536,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.1,
+          "cached_input_per_million": 0.55,
+          "output_per_million": 4.4
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "o1-mini-2024-09-12",
+    "name": "o1-mini",
+    "provider": "openai",
+    "family": "o1-mini",
+    "created_at": null,
+    "context_window": 128000,
+    "max_output_tokens": 65536,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.1,
+          "cached_input_per_million": 0.55,
+          "output_per_million": 4.4
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "o1-preview",
+    "name": "o1 Preview",
+    "provider": "openai",
+    "family": "o1-preview",
+    "created_at": null,
+    "context_window": 128000,
+    "max_output_tokens": 32768,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 15.0,
+          "cached_input_per_million": 7.5,
+          "output_per_million": 60.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "o1-preview-2024-09-12",
+    "name": "o1 Preview",
+    "provider": "openai",
+    "family": "o1-preview",
+    "created_at": null,
+    "context_window": 128000,
+    "max_output_tokens": 32768,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 15.0,
+          "cached_input_per_million": 7.5,
+          "output_per_million": 60.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "o1-pro",
+    "name": "o1-pro",
+    "provider": "openai",
+    "family": "o1-pro",
+    "created_at": null,
+    "context_window": 200000,
+    "max_output_tokens": 100000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 150.0,
+          "output_per_million": 600.0
+        },
+        "batch": {
+          "input_per_million": 75.0,
+          "output_per_million": 300.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "o1-pro-2025-03-19",
+    "name": "o1-pro",
+    "provider": "openai",
+    "family": "o1-pro",
+    "created_at": null,
+    "context_window": 200000,
+    "max_output_tokens": 100000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 150.0,
+          "output_per_million": 600.0
+        },
+        "batch": {
+          "input_per_million": 75.0,
+          "output_per_million": 300.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "o3",
+    "name": "o3",
+    "provider": "openai",
+    "family": "o3",
+    "created_at": null,
+    "context_window": 200000,
+    "max_output_tokens": 100000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 2.0,
+          "cached_input_per_million": 0.5,
+          "output_per_million": 8.0
+        },
+        "batch": {
+          "input_per_million": 1.0,
+          "output_per_million": 4.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "o3-2025-04-16",
+    "name": "o3",
+    "provider": "openai",
+    "family": "o3",
+    "created_at": null,
+    "context_window": 200000,
+    "max_output_tokens": 100000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 2.0,
+          "cached_input_per_million": 0.5,
+          "output_per_million": 8.0
+        },
+        "batch": {
+          "input_per_million": 1.0,
+          "output_per_million": 4.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "o3-deep-research",
+    "name": "o3-deep-research",
+    "provider": "openai",
+    "family": "o3-deep-research",
+    "created_at": null,
+    "context_window": 200000,
+    "max_output_tokens": 100000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 10.0,
+          "cached_input_per_million": 2.5,
+          "output_per_million": 40.0
+        },
+        "batch": {
+          "input_per_million": 5.0,
+          "output_per_million": 20.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "o3-deep-research-2025-06-26",
+    "name": "o3-deep-research",
+    "provider": "openai",
+    "family": "o3-deep-research",
+    "created_at": null,
+    "context_window": 200000,
+    "max_output_tokens": 100000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 10.0,
+          "cached_input_per_million": 2.5,
+          "output_per_million": 40.0
+        },
+        "batch": {
+          "input_per_million": 5.0,
+          "output_per_million": 20.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "o3-mini",
+    "name": "o3-mini",
+    "provider": "openai",
+    "family": "o3-mini",
+    "created_at": null,
+    "context_window": 200000,
+    "max_output_tokens": 100000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.1,
+          "cached_input_per_million": 0.55,
+          "output_per_million": 4.4
+        },
+        "batch": {
+          "input_per_million": 0.55,
+          "output_per_million": 2.2
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "o3-mini-2025-01-31",
+    "name": "o3-mini",
+    "provider": "openai",
+    "family": "o3-mini",
+    "created_at": null,
+    "context_window": 200000,
+    "max_output_tokens": 100000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.1,
+          "cached_input_per_million": 0.55,
+          "output_per_million": 4.4
+        },
+        "batch": {
+          "input_per_million": 0.55,
+          "output_per_million": 2.2
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "o3-pro",
+    "name": "o3-pro",
+    "provider": "openai",
+    "family": "o3-pro",
+    "created_at": null,
+    "context_window": 200000,
+    "max_output_tokens": 100000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 20.0,
+          "output_per_million": 80.0
+        },
+        "batch": {
+          "input_per_million": 10.0,
+          "output_per_million": 40.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "o3-pro-2025-06-10",
+    "name": "o3-pro",
+    "provider": "openai",
+    "family": "o3-pro",
+    "created_at": null,
+    "context_window": 200000,
+    "max_output_tokens": 100000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 20.0,
+          "output_per_million": 80.0
+        },
+        "batch": {
+          "input_per_million": 10.0,
+          "output_per_million": 40.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "o4-mini",
+    "name": "o4-mini",
+    "provider": "openai",
+    "family": "o4-mini",
+    "created_at": null,
+    "context_window": 200000,
+    "max_output_tokens": 100000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.1,
+          "cached_input_per_million": 0.275,
+          "output_per_million": 4.4
+        },
+        "batch": {
+          "input_per_million": 0.55,
+          "output_per_million": 2.2
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "o4-mini-2025-04-16",
+    "name": "o4-mini",
+    "provider": "openai",
+    "family": "o4-mini",
+    "created_at": null,
+    "context_window": 200000,
+    "max_output_tokens": 100000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch",
+      "function_calling",
+      "structured_output"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 1.1,
+          "cached_input_per_million": 0.275,
+          "output_per_million": 4.4
+        },
+        "batch": {
+          "input_per_million": 0.55,
+          "output_per_million": 2.2
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "o4-mini-deep-research",
+    "name": "o4-mini-deep-research",
+    "provider": "openai",
+    "family": "o4-mini-deep-research",
+    "created_at": null,
+    "context_window": 200000,
+    "max_output_tokens": 100000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 2.0,
+          "cached_input_per_million": 0.5,
+          "output_per_million": 8.0
+        },
+        "batch": {
+          "input_per_million": 1.0,
+          "output_per_million": 4.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "o4-mini-deep-research-2025-06-26",
+    "name": "o4-mini-deep-research",
+    "provider": "openai",
+    "family": "o4-mini-deep-research",
+    "created_at": null,
+    "context_window": 200000,
+    "max_output_tokens": 100000,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 2.0,
+          "cached_input_per_million": 0.5,
+          "output_per_million": 8.0
+        },
+        "batch": {
+          "input_per_million": 1.0,
+          "output_per_million": 4.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "omni-moderation-latest",
+    "name": "omni-moderation-latest",
+    "provider": "openai",
+    "family": "omni-moderation-latest",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch"
+    ],
+    "pricing": {},
+    "metadata": {}
+  },
+  {
+    "id": "sora-2",
+    "name": "Sora 2",
+    "provider": "openai",
+    "family": "sora-2",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "audio",
+        "embeddings"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "output_per_million": 100000.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "sora-2-2025-10-06",
+    "name": "Sora 2",
+    "provider": "openai",
+    "family": "sora-2",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "audio",
+        "embeddings"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "output_per_million": 100000.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "sora-2-pro",
+    "name": "Sora 2 Pro",
+    "provider": "openai",
+    "family": "sora-2-pro",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "audio",
+        "embeddings"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {},
+    "metadata": {}
+  },
+  {
+    "id": "sora-2-pro-2025-10-06",
+    "name": "Sora 2 Pro",
+    "provider": "openai",
+    "family": "sora-2-pro",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "image",
+        "text"
+      ],
+      "output": [
+        "audio",
+        "embeddings"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {},
+    "metadata": {}
+  },
+  {
+    "id": "text-embedding-3-large",
+    "name": "text-embedding-3-large",
+    "provider": "openai",
+    "family": "text-embedding-3-large",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.13
+        },
+        "batch": {
+          "input_per_million": 0.065
+        }
+      },
+      "embeddings": {
+        "standard": {
+          "input_per_million": 0.13
+        },
+        "batch": {
+          "input_per_million": 0.065
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "text-embedding-3-small",
+    "name": "text-embedding-3-small",
+    "provider": "openai",
+    "family": "text-embedding-3-small",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.02
+        },
+        "batch": {
+          "input_per_million": 0.01
+        }
+      },
+      "embeddings": {
+        "standard": {
+          "input_per_million": 0.02
+        },
+        "batch": {
+          "input_per_million": 0.01
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "text-embedding-ada-002",
+    "name": "text-embedding-ada-002",
+    "provider": "openai",
+    "family": "text-embedding-ada-002",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [
+      "batch"
+    ],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.1
+        },
+        "batch": {
+          "input_per_million": 0.05
+        }
+      },
+      "embeddings": {
+        "standard": {
+          "input_per_million": 0.1
+        },
+        "batch": {
+          "input_per_million": 0.05
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "text-moderation-latest",
+    "name": "text-moderation-latest",
+    "provider": "openai",
+    "family": "text-moderation-latest",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": 32768,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {},
+    "metadata": {}
+  },
+  {
+    "id": "text-moderation-stable",
+    "name": "text-moderation-stable",
+    "provider": "openai",
+    "family": "text-moderation-stable",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": 32768,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {},
+    "metadata": {}
+  },
+  {
+    "id": "tts-1",
+    "name": "TTS-1",
+    "provider": "openai",
+    "family": "tts-1",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "audio",
+        "embeddings"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 15.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "tts-1-hd",
+    "name": "TTS-1 HD",
+    "provider": "openai",
+    "family": "tts-1-hd",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "audio",
+        "embeddings"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 30.0
+        }
+      }
+    },
+    "metadata": {}
+  },
+  {
+    "id": "whisper-1",
+    "name": "Whisper",
+    "provider": "openai",
+    "family": "whisper-1",
+    "created_at": null,
+    "context_window": null,
+    "max_output_tokens": null,
+    "knowledge_cutoff": null,
+    "modalities": {
+      "input": [
+        "audio"
+      ],
+      "output": [
+        "audio",
+        "embeddings",
+        "text"
+      ]
+    },
+    "capabilities": [],
+    "pricing": {
+      "text_tokens": {
+        "standard": {
+          "input_per_million": 0.006
+        }
+      }
+    },
+    "metadata": {}
+  }
+]

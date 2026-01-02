@@ -10,8 +10,11 @@ require_relative 'nukitori/schema_generator'
 require_relative 'nukitori/extractor'
 
 module Nukitori
+  # Path to bundled models.json with up-to-date model definitions
+  MODELS_JSON = File.expand_path('nukitori/models.json', __dir__)
   class << self
     # Configure RubyLLM through Nukitori
+    # Automatically uses bundled models.json with latest model definitions
     #
     # @example
     #   Nukitori.configure do |config|
@@ -19,8 +22,12 @@ module Nukitori
     #     config.openai_api_key = ENV['OPENAI_API_KEY']
     #   end
     #
-    def configure(&block)
-      RubyLLM.configure(&block)
+    def configure
+      RubyLLM.configure do |config|
+        # Use bundled models.json with up-to-date model definitions
+        config.model_registry_file = MODELS_JSON
+        yield config if block_given?
+      end
     end
 
     # Main entry point - callable as Nukitori(html) { schema }
