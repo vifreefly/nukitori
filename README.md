@@ -54,23 +54,6 @@ end
 puts data['repos'].first['name']
 ```
 
-```ruby
-# Without caching (generates schema each time)
-data = Nukitori(html) do
-  array :products do
-    object do
-      string :title
-      number :price
-    end
-  end
-end
-```
-
-```ruby
-# With pre-made XPath schema hash
-data = Nukitori(html, my_xpath_schema)
-```
-
 ### Extended Usage
 
 For more control, use the classes directly:
@@ -150,7 +133,7 @@ end
 | Z.AI | `glm-4.7` | ~1m |
 | Z.AI | `glm-4.5-airx` | ~30s |
 
-**Recommendation:** Based on my testing, `gpt-5.2` offers the best balance of speed and reliability for complex nested schemas. It consistently generates robust XPaths that work across similar pages.
+**Recommendation:** Based on my testing, `gpt-5.2` offers the best balance of speed and reliability for generating complex nested extraction schemas. It consistently generates robust XPaths that work across similar HTML pages.
 
 ## License
 
