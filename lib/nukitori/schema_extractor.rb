@@ -101,12 +101,14 @@ module Nukitori
       return nil if xpath_result.nil?
       return nil if xpath_result.is_a?(Nokogiri::XML::NodeSet) && xpath_result.empty?
 
-      if xpath_result.is_a?(Nokogiri::XML::NodeSet)
+      value = if xpath_result.is_a?(Nokogiri::XML::NodeSet)
         node = xpath_result.first
         node.is_a?(Nokogiri::XML::Attr) ? node.value : node.text
       else
         xpath_result.to_s
       end
+
+      value.strip
     end
 
     def apply_transform(value, transform)
