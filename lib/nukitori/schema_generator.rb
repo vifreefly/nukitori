@@ -41,7 +41,7 @@ module Nukitori
       normalized_requirements = normalize_requirements(requirements)
       prompt = build_prompt(normalized_requirements)
 
-      chat = model ? RubyLLM.chat(model:) : RubyLLM.chat
+      chat = ChatFactory.create(model:)
       chat.with_instructions(prompt)
 
       response = chat.ask(processed_html)
@@ -51,8 +51,7 @@ module Nukitori
     private
 
     def build_requirements(&block)
-      schema_class = Class.new(RubyLLM::Schema)
-      schema_class.class_eval(&block)
+      schema_class = Class.new(RubyLLM::Schema, &block)
       schema_class.new.to_json
     end
 

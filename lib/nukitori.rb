@@ -8,6 +8,7 @@ require 'json'
 require_relative 'nukitori/version'
 require_relative 'nukitori/response_parser'
 require_relative 'nukitori/html_preprocessor'
+require_relative 'nukitori/chat_factory'
 require_relative 'nukitori/schema_generator'
 require_relative 'nukitori/data_extractor'
 
@@ -90,7 +91,7 @@ module Nukitori
       schema_class = Class.new(RubyLLM::Schema, &block)
       processed_html = HtmlPreprocessor.process(html)
 
-      chat = RubyLLM.chat(model: 'glm-4.5-airx', provider: :openai, assume_model_exists: true)
+      chat = ChatFactory.create
       chat.with_schema(schema_class)
       chat.with_instructions("You are a web scraping/web data extraction expert. Extract data from the provided HTML according to the provided JSON schema. Return output in JSON format only, without any explanations.")
 
