@@ -10,7 +10,8 @@ require_relative 'nukitori/response_parser'
 require_relative 'nukitori/html_preprocessor'
 require_relative 'nukitori/chat_factory'
 require_relative 'nukitori/schema_generator'
-require_relative 'nukitori/data_extractor'
+require_relative 'nukitori/schema_extractor'
+require_relative 'nukitori/llm_extractor'
 
 module Nukitori
   # Path to bundled models.json with up-to-date model definitions
@@ -66,7 +67,7 @@ module Nukitori
       if schema_path
         extract_with_schema(html, schema_path, &block)
       else
-        extract_with_ai(html, &block)
+        LlmExtractor.extract(html, &block)
       end
     end
 
@@ -82,21 +83,8 @@ module Nukitori
         generate_and_save_schema(doc, schema_path, &block)
       end
 
-      extractor = DataExtractor.new(xpath_schema)
+      extractor = SchemaExtractor.new(xpath_schema)
       extractor.extract(doc)
-    end
-
-    # AI-only extraction (no schema, LLM extracts directly)
-    def extract_with_ai(html, &block)
-      schema_class = Class.new(RubyLLM::Schema, &block)
-      processed_html = HtmlPreprocessor.process(html)
-
-      chat = ChatFactory.create
-      chat.with_schema(schema_class)
-      chat.with_instructions("You are a web scraping/web data extraction expert. Extract data from the provided HTML according to the provided JSON schema. Return output in JSON format only, without any explanations.")
-
-      response = chat.ask(processed_html)
-      ResponseParser.parse(response.content)
     end
 
     def generate_and_save_schema(doc, path, &block)

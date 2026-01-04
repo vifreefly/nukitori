@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Nukitori
-  class DataExtractor
+  class SchemaExtractor
     attr_reader :schema
 
     # @param schema [Hash] XPath schema
