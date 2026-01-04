@@ -72,11 +72,11 @@ module Nukitori
     #     string :title
     #   end
     #
-    def call(html, schema_path = nil, model: nil, &block)
+    def call(html, schema_path = nil, model: nil, prefix: nil, &block)
       raise ArgumentError, "Block required for schema definition" unless block_given?
 
       if schema_path
-        extract_with_schema(html, schema_path, model:, &block)
+        extract_with_schema(html, schema_path, model:, prefix:, &block)
       else
         LlmExtractor.extract(html, model:, &block)
       end
@@ -85,29 +85,38 @@ module Nukitori
     private
 
     # XPath-based extraction with reusable schema
-    def extract_with_schema(html, schema_path, model: nil, &block)
+    def extract_with_schema(html, schema_path, model: nil, prefix: nil, &block)
       doc = html.is_a?(Nokogiri::HTML::Document) ? html : Nokogiri::HTML(html)
 
       xpath_schema = if File.exist?(schema_path)
-        JSON.parse(File.read(schema_path))
-      else
-        generate_and_save_schema(doc, schema_path, model:, &block)
+        file_content = JSON.parse(File.read(schema_path))
+        prefix ? file_content[prefix] : file_content
       end
+
+      xpath_schema ||= generate_and_save_schema(doc, schema_path, model:, prefix:, &block)
 
       extractor = SchemaExtractor.new(xpath_schema)
       extractor.extract(doc)
     end
 
-    def generate_and_save_schema(doc, path, model: nil, &block)
+    def generate_and_save_schema(doc, path, model: nil, prefix: nil, &block)
       generator = SchemaGenerator.new(model:, &block)
       xpath_schema = generator.create_extraction_schema_for(doc)
-      File.write(path, JSON.pretty_generate(xpath_schema))
+
+      if prefix
+        existing = File.exist?(path) ? JSON.parse(File.read(path)) : {}
+        existing[prefix] = xpath_schema
+        File.write(path, JSON.pretty_generate(existing))
+      else
+        File.write(path, JSON.pretty_generate(xpath_schema))
+      end
+
       xpath_schema
     end
   end
 end
 
 # DSL method - allows Nukitori(html, 'schema.json') { ... } syntax
-def Nukitori(html, schema_path = nil, model: nil, &block)
-  Nukitori.call(html, schema_path, model:, &block)
+def Nukitori(html, schema_path = nil, model: nil, prefix: nil, &block)
+  Nukitori.call(html, schema_path, model:, prefix:, &block)
 end
