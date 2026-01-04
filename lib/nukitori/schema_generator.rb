@@ -20,6 +20,8 @@ module Nukitori
     #   end
     #
     def initialize(model: nil, &block)
+      raise ArgumentError, "Block required for schema definition" unless block_given?
+
       @model = model
       @schema_block = block
     end
@@ -31,12 +33,9 @@ module Nukitori
     # @example
     #   extraction_schema = generator.create_extraction_schema_for(html)
     #
-    def create_extraction_schema_for(html, &block)
-      schema_block = block || @schema_block
-      raise ArgumentError, "Schema definition required (pass block to initialize or this method)" unless schema_block
-
+    def create_extraction_schema_for(html)
       doc = html.is_a?(Nokogiri::HTML::Document) ? html : Nokogiri::HTML(html)
-      requirements = build_requirements(&schema_block)
+      requirements = build_requirements(&@schema_block)
       processed_html = HtmlPreprocessor.process(doc)
       normalized_requirements = normalize_requirements(requirements)
       prompt = build_prompt(normalized_requirements)
@@ -70,7 +69,7 @@ module Nukitori
 
         ## Requirements Schema (what to extract)
         ```json
-        #{JSON.pretty_generate(requirements)}
+        #{requirements.to_json}
         ```
 
         ## XPath Schema Format

@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
 module Nukitori
-  # Factory for creating RubyLLM chat instances with automatic configuration
-  # If custom openai_api_base is set, automatically adds provider: :openai, assume_model_exists: true
   class ChatFactory
     class << self
       def create(model: nil)
