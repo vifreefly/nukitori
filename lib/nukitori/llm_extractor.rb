@@ -15,7 +15,7 @@ module Nukitori
         processed_html = HtmlPreprocessor.process(html)
 
         chat = ChatFactory.create
-        chat.with_schema(schema_class)
+        chat.with_schema(schema_class) if support_structured_output?(chat.model)
         chat.with_instructions(build_prompt(schema_class))
 
         response = chat.ask(processed_html)
@@ -23,6 +23,10 @@ module Nukitori
       end
 
       private
+
+      def support_structured_output?(model)
+        model.capabilities.include?('structured_output') && !model.id.include?('deepseek')
+      end
 
       def build_prompt(schema_class)
         schema = JSON.parse(schema_class.new.to_json)
@@ -38,7 +42,7 @@ module Nukitori
 
           ## Requirements Schema (what to extract)
           ```json
-          #{JSON.pretty_generate(properties)}
+          #{properties.to_json}
           ```
         PROMPT
       end
