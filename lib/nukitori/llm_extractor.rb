@@ -6,15 +6,16 @@ module Nukitori
     class << self
       # Extract data from HTML using LLM directly
       # @param html [String, Nokogiri::HTML::Document] HTML content
+      # @param model [String, nil] LLM model to use (overrides default_model)
       # @param block [Proc] Schema definition block
       # @return [Hash] Extracted data
-      def extract(html, &block)
+      def extract(html, model: nil, &block)
         raise ArgumentError, "Block required for schema definition" unless block_given?
 
         schema_class = Class.new(RubyLLM::Schema, &block)
         processed_html = HtmlPreprocessor.process(html)
 
-        chat = ChatFactory.create
+        chat = ChatFactory.create(model:)
         chat.with_schema(schema_class) if support_structured_output?(chat.model)
         chat.with_instructions(build_prompt(schema_class))
 

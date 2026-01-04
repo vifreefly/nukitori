@@ -38,6 +38,7 @@ module Nukitori
     #
     # @param html [String, Nokogiri::HTML::Document] HTML content or Nokogiri doc
     # @param schema_path [String, nil] Path to cache extraction schema (optional)
+    # @param model [String, nil] LLM model to use (overrides default_model)
     # @param block [Proc] Schema definition block
     # @return [Hash] Extracted data
     #
@@ -51,6 +52,11 @@ module Nukitori
     #     end
     #   end
     #
+    # @example With custom model
+    #   data = Nukitori(html, 'repos_schema.json', model: 'gpt-5.2') do
+    #     string :title
+    #   end
+    #
     # @example AI-only mode (no schema, calls LLM each time)
     #   data = Nukitori(html) do
     #     array :products do
@@ -61,34 +67,39 @@ module Nukitori
     #     end
     #   end
     #
-    def call(html, schema_path = nil, &block)
+    # @example AI-only mode with custom model
+    #   data = Nukitori(html, model: 'claude-sonnet-4') do
+    #     string :title
+    #   end
+    #
+    def call(html, schema_path = nil, model: nil, &block)
       raise ArgumentError, "Block required for schema definition" unless block_given?
 
       if schema_path
-        extract_with_schema(html, schema_path, &block)
+        extract_with_schema(html, schema_path, model:, &block)
       else
-        LlmExtractor.extract(html, &block)
+        LlmExtractor.extract(html, model:, &block)
       end
     end
 
     private
 
     # XPath-based extraction with reusable schema
-    def extract_with_schema(html, schema_path, &block)
+    def extract_with_schema(html, schema_path, model: nil, &block)
       doc = html.is_a?(Nokogiri::HTML::Document) ? html : Nokogiri::HTML(html)
 
       xpath_schema = if File.exist?(schema_path)
         JSON.parse(File.read(schema_path))
       else
-        generate_and_save_schema(doc, schema_path, &block)
+        generate_and_save_schema(doc, schema_path, model:, &block)
       end
 
       extractor = SchemaExtractor.new(xpath_schema)
       extractor.extract(doc)
     end
 
-    def generate_and_save_schema(doc, path, &block)
-      generator = SchemaGenerator.new(&block)
+    def generate_and_save_schema(doc, path, model: nil, &block)
+      generator = SchemaGenerator.new(model:, &block)
       xpath_schema = generator.create_extraction_schema_for(doc)
       File.write(path, JSON.pretty_generate(xpath_schema))
       xpath_schema
@@ -97,6 +108,6 @@ module Nukitori
 end
 
 # DSL method - allows Nukitori(html, 'schema.json') { ... } syntax
-def Nukitori(html, schema_path = nil, &block)
-  Nukitori.call(html, schema_path, &block)
+def Nukitori(html, schema_path = nil, model: nil, &block)
+  Nukitori.call(html, schema_path, model:, &block)
 end
