@@ -84,7 +84,6 @@ module Nukitori
     def extract_primitive(context, field_def)
       xpath = field_def['xpath']
       type = field_def['type'] || 'string'
-      transform = field_def['transform']
 
       return nil unless xpath
 
@@ -93,8 +92,7 @@ module Nukitori
 
       return nil if raw_value.nil?
 
-      transformed = apply_transform(raw_value, transform)
-      convert_to_type(transformed, type)
+      convert_to_type(raw_value, type)
     end
 
     def extract_raw_value(xpath_result)
@@ -111,29 +109,14 @@ module Nukitori
       value.strip
     end
 
-    def apply_transform(value, transform)
-      case transform
-      when 'trim'
-        value.strip.gsub(/\s+/, ' ')
-      when 'strip_tags'
-        Nokogiri::HTML.fragment(value).text
-      when 'to_int'
-        value.gsub(/[^\d\-]/, '')
-      when 'to_float'
-        value.gsub(/[^\d.\-]/, '')
-      else
-        value
-      end
-    end
-
     def convert_to_type(value, type)
       case type
       when 'string'
-        value.to_s
+        value.to_s.gsub(/\s+/, ' ')
       when 'integer'
-        value.to_i
+        value.gsub(/[^\d\-]/, '').to_i
       when 'number', 'float'
-        value.to_f
+        value.gsub(/[^\d.\-]/, '').to_f
       when 'boolean'
         %w[true yes 1 on].include?(value.to_s.downcase)
       else

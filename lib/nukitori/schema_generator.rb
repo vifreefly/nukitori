@@ -81,8 +81,7 @@ module Nukitori
            {
              "field_name": {
                "xpath": "//div[@class='example']",
-               "type": "string",
-               "transform": "trim"
+               "type": "string"
              }
            }
            ```
@@ -94,8 +93,8 @@ module Nukitori
                "type": "array",
                "container_xpath": "//div[@class='item']",
                "items": {
-                 "name": {"xpath": ".//h3", "type": "string", "transform": "trim"},
-                 "price": {"xpath": ".//span[@class='price']", "type": "number", "transform": "to_int"}
+                 "name": {"xpath": ".//h3", "type": "string"},
+                 "price": {"xpath": ".//span[@class='price']", "type": "number"}
                }
              }
            }
@@ -109,8 +108,7 @@ module Nukitori
                "container_xpath": ".//a[@class='tag']",
                "items": {
                  "xpath": ".",
-                 "type": "string",
-                 "transform": "trim"
+                 "type": "string"
                }
              }
            }
@@ -124,7 +122,6 @@ module Nukitori
         - Use `@attr` to extract attribute values (e.g., `@href`, `@src`), especially for schema attributes which ends at `link` or `url`
         - Prefer semantic attributes: `@data-testid`, `@role`, `@aria-label`
         - Prefer tag structure: `//article//h3/a` over class-based selectors
-        - Available transforms: "trim", "to_int", "to_float", "strip_tags"
 
         ## CRITICAL: Avoid Page-Specific Values
 
