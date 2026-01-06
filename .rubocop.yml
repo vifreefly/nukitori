@@ -1,2 +1,5 @@
 AllCops:
   TargetRubyVersion: 3.2
+Naming/MethodName:
+  AllowedPatterns:
+    - '^Nukitori$'

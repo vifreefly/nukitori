@@ -109,7 +109,8 @@ After that, Nukitori extracts structured data from similar HTMLs without any LLM
       "url": "/vifreefly/kimuraframework",
       "stars": "1.1k",
       "tags": ["ruby", "crawler", "scraper", "web-scraping", "scrapy"]
-    }
+    },
+    //...
   ]
 }
 ```

@@ -9,7 +9,12 @@ Gem::Specification.new do |spec|
   spec.email = ['vicfreefly@gmail.com']
 
   spec.summary = 'Generate reusable XPath schemas with an LLM, then scrape HTML without AI'
-  spec.description = 'Nukitori is a Ruby gem for HTML data extraction. It uses an LLM once to generate reusable XPath schemas, then extracts structured data from similarly structured pages using plain Nokogiri. This makes scraping fast, predictable, and cheap for repeated runs.'
+  spec.description = <<~DESC.gsub("\n", ' ').strip
+    Nukitori is a Ruby gem for HTML data extraction. It uses an LLM once to generate
+    reusable XPath schemas, then extracts structured data from similarly structured
+    pages using plain Nokogiri. This makes scraping fast, predictable, and cheap for
+    repeated runs.
+  DESC
   spec.homepage = 'https://github.com/vifreefly/nukitori'
   spec.license = 'MIT'
   spec.required_ruby_version = '>= 3.2.0'
