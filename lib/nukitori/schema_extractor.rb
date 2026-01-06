@@ -112,7 +112,7 @@ module Nukitori
     def convert_to_type(value, type)
       case type
       when 'string'
-        value.to_s.gsub(/\s+/, ' ')
+        value.to_s.gsub(/\s+/, ' ').strip
       when 'integer'
         value.gsub(/[^\d\-]/, '').to_i
       when 'number', 'float'
