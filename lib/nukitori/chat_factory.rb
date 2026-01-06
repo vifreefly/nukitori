@@ -9,7 +9,7 @@ module Nukitori
 
         begin
           RubyLLM.chat(**options)
-        rescue RubyLLM::ModelNotFoundError 
+        rescue RubyLLM::ModelNotFoundError
           # If custom OpenAI-compatible API is configured, add required options
           if custom_openai_api?
             options[:provider] = :openai

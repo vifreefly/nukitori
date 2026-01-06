@@ -10,7 +10,7 @@ module Nukitori
       # @param block [Proc] Schema definition block
       # @return [Hash] Extracted data
       def extract(html, model: nil, &block)
-        raise ArgumentError, "Block required for schema definition" unless block_given?
+        raise ArgumentError, 'Block required for schema definition' unless block_given?
 
         schema_class = Class.new(RubyLLM::Schema, &block)
         processed_html = HtmlPreprocessor.process(html)

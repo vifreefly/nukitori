@@ -73,7 +73,7 @@ module Nukitori
     #   end
     #
     def call(html, schema_path = nil, model: nil, prefix: nil, &block)
-      raise ArgumentError, "Block required for schema definition" unless block_given?
+      raise ArgumentError, 'Block required for schema definition' unless block_given?
 
       if schema_path
         extract_with_schema(html, schema_path, model:, prefix:, &block)
@@ -89,9 +89,9 @@ module Nukitori
       doc = html.is_a?(Nokogiri::HTML::Document) ? html : Nokogiri::HTML(html)
 
       xpath_schema = if File.exist?(schema_path)
-        file_content = JSON.parse(File.read(schema_path))
-        prefix ? file_content[prefix] : file_content
-      end
+                       file_content = JSON.parse(File.read(schema_path))
+                       prefix ? file_content[prefix] : file_content
+                     end
 
       xpath_schema ||= generate_and_save_schema(doc, schema_path, model:, prefix:, &block)
 

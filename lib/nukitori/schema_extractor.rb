@@ -100,11 +100,11 @@ module Nukitori
       return nil if xpath_result.is_a?(Nokogiri::XML::NodeSet) && xpath_result.empty?
 
       value = if xpath_result.is_a?(Nokogiri::XML::NodeSet)
-        node = xpath_result.first
-        node.is_a?(Nokogiri::XML::Attr) ? node.value : node.text
-      else
-        xpath_result.to_s
-      end
+                node = xpath_result.first
+                node.is_a?(Nokogiri::XML::Attr) ? node.value : node.text
+              else
+                xpath_result.to_s
+              end
 
       value.strip
     end
@@ -114,9 +114,9 @@ module Nukitori
       when 'string'
         value.to_s.gsub(/\s+/, ' ').strip
       when 'integer'
-        value.gsub(/[^\d\-]/, '').to_i
+        value.gsub(/[^\d-]/, '').to_i
       when 'number', 'float'
-        value.gsub(/[^\d.\-]/, '').to_f
+        value.gsub(/[^\d.-]/, '').to_f
       when 'boolean'
         %w[true yes 1 on].include?(value.to_s.downcase)
       else

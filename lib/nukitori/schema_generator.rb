@@ -20,7 +20,7 @@ module Nukitori
     #   end
     #
     def initialize(model: nil, &block)
-      raise ArgumentError, "Block required for schema definition" unless block_given?
+      raise ArgumentError, 'Block required for schema definition' unless block_given?
 
       @model = model
       @schema_block = block
