@@ -8,17 +8,16 @@ Nukitori is a Ruby gem for HTML data extraction that uses an LLM once to generat
 - **Robust reusable schemas** — avoids page-specific IDs, dynamic hashes, and fragile selectors
 - **Transparent output** — generated schemas are plain JSON, easy to inspect, diff, and version
 - **Token-optimized** — strips scripts, styles, and redundant DOM before sending HTML to the LLM
-- **Any LLM provider** — works with OpenAI, Anthropic, Gemini, and local models
-
-Define what you want to extract from HTML using a simple schema DSL:
+- **Any LLM provider** — works with OpenAI, Anthropic, Gemini, and local models:
 
 ```ruby
-# github_extract.rb
+# example_extract.rb
 require 'nukitori'
 require 'json'
 
 html = "<HTML DOM from https://github.com/search?q=ruby+web+scraping&type=repositories>"
 
+# define what you want to extract from HTML using simple DSL:
 data = Nukitori(html, 'schema.json') do
   integer :repositories_found_count
   array :repositories do
@@ -35,12 +34,10 @@ end
 File.write('results.json', JSON.pretty_generate(data))
 ```
 
-On the first run `$ ruby github_extract.rb` Nukitori uses AI to generate a reusable XPath extraction schema:
-
-<details>
-  <summary><code>schema.json</code> (click to expand)</summary><br>
+On the first run `$ ruby example_extract.rb` Nukitori uses AI to generate a reusable XPath extraction schema:
 
 ```json
+/* schema.json */
 {
   "repositories_found_count": {
     "xpath": "//a[@data-testid='nav-item-repositories']//span[@data-testid='resolved-count-label']",
@@ -78,14 +75,11 @@ On the first run `$ ruby github_extract.rb` Nukitori uses AI to generate a reusa
   }
 }
 ```
-</details>
 
 After that, Nukitori extracts structured data from similar HTMLs without any LLM calls, in milliseconds:
 
-<details>
-  <summary><code>results.json</code> (click to expand)</summary><br>
-
 ```json
+/* results.json */
 {
   "repositories_found_count": 314,
   "repositories": [
@@ -114,7 +108,6 @@ After that, Nukitori extracts structured data from similar HTMLs without any LLM
   ]
 }
 ```
-</details>
 
 ## Installation
 
